@@ -1,0 +1,10 @@
+main:
+  - title: "Quick-Start Guide"
+    # TODO - link to antora guide
+    url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin"
+  - title: "User Guide"
+    # TODO - link to antora guide
+    url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin/blob/master/FEATURES.adoc"
+  - title: "FAQ"
+    # TODO - link to antora guide
+    url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin/wiki"

@@ -1,1 +1,5 @@
-/* https://github.com/asciidoctor/asciidoctor-intellij-plugin
+# avoid alias site to be indexed by search engine
+https://intellij-plugin-asciidoctor-org.netlify.app/* https://asciidoc-intellij-plugin.ahus1.de/:splat 301!
+
+# any existing resource will be returned directly, any left-over wildcards will be 404
+/* /404.html 404
