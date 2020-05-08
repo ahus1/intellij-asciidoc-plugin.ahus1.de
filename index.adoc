@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: AsciiDoc IntelliJ Plugin
+title: IntelliJ AsciiDoc Plugin
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
