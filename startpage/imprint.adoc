@@ -2,6 +2,7 @@
 layout: single
 title: Imprint
 permalink: /imprint
+sitemap: false
 ---
 
 As I live in Germany, and most likely need to satisfy German laws this site needs a German imprint.

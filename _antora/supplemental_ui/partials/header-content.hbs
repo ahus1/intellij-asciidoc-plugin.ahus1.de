@@ -1,0 +1,33 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/"><img src="/assets/images/ad-logo.svg" class="logo" style="margin-right: 0.55rem" alt=""> {{site.title}}</a>
+      {{#if env.DOCSEARCH_ENABLED}}
+          <div class="navbar-item">
+              <input id="search-input" type="text" placeholder="Search docs">
+          </div>
+      {{/if}}
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="/docs/users-guide/quick-start.html">Quick-Start</a>
+        </div>
+          <div class="navbar-item">
+              <a href="/docs/users-guide/index.html">User’s Guide</a>
+          </div>
+          <div class="navbar-item">
+              <a href="/docs/contributors-guide/index.html">Contributor’s Guide</a>
+          </div>
+        <div class="navbar-item">
+          <a href="/docs/users-guide/faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

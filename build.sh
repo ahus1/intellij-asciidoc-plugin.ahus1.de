@@ -1,3 +1,26 @@
 #!/usr/bin/env bash
-jekyll build --destination _site
+set -e
+set -x
+
+# prepare start page with jekyll
+jekyll build --source startpage --destination _site
+
+# configure netlify
 cp _redirects _site/_redirects
+
+# prepare antora
+export DOCSEARCH_ENABLED=true && export DOCSEARCH_ENGINE=lunr && yarn install && yarn build
+
+# preparing lambda
+cd lambda
+yarn install
+yarn generate
+cd ..
+
+# search engines should only index the master branch
+if [ "$BRANCH" != "master" ]; then
+cat >> _site/_headers << EOF
+/*
+  x-robots-tag: noindex
+EOF
+fi

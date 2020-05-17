@@ -1,0 +1,11 @@
+= HTTP Client in IntelliJ IDEA
+
+== What you can see here
+
+These are snippes you can use in your IntelliJ IDEA Code Editor to trigger rest requests.
+
+The cool thing: you can parameterize them, commit them to git and share them with co-workers!
+
+== Resources
+
+IDEA Help: https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html

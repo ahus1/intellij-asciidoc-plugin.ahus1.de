@@ -1,0 +1,34 @@
+site:
+  title: IntelliJ AsciiDoc Plugin
+  # the 404, site-map, and canonical urls are only generated when a url is defined
+  url: https://intellij-asciidoc-plugin.ahus1.de/
+  start_page: users-guide::index.adoc
+content:
+  sources:
+    - url: ../asciidoctor-intellij-plugin
+      start_paths:
+        - doc/users-guide
+        - doc/contributors-guide
+      branches:
+        - 'HEAD'
+
+ui:
+  bundle:
+    url: _antora/ui-bundle.zip
+    snapshot: true
+  supplemental_files: _antora/supplemental_ui
+  output_dir: antora
+
+runtime:
+  fetch: true
+  cache_dir: ./.cache/antora
+
+output:
+  dir: _site/docs
+
+# Global asciidoc attributes here, used across all versions of documentation
+asciidoc:
+  attributes:
+    idprefix:
+    idseparator: '-'
+

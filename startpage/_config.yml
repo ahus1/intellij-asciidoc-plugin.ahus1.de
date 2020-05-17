@@ -58,3 +58,6 @@ exclude:
   - .idea
   - build.sh
   - .sass-cache
+  - _antora
+  - package.json
+  - author-playbook.yml

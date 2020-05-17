@@ -1,4 +1,8 @@
-/.idea
+/.idea/*
+!/.idea/externalDependencies.xml
 _site
 .sass-cache
 .jekyll-metadata
+node_modules
+.cache
+yarn-error.log

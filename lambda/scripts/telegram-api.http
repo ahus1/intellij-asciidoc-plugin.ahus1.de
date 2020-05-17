@@ -1,0 +1,8 @@
+### Get updates from channels to identify the chat ID
+POST https://api.telegram.org/bot{{API_TOKEN}}/getUpdates
+
+### Tryout API and CHAT tokens for bot
+POST https://api.telegram.org/bot{{API_TOKEN}}/sendMessage?chat_id={{CHAT_ID}}
+Content-Type: application/json
+
+< message.json

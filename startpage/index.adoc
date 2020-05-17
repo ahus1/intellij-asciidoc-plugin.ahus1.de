@@ -7,11 +7,9 @@ header:
   overlay_image: /assets/images/screenshot.png
   actions:
     - label: "Feature tour"
-      url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin/blob/master/FEATURES.adoc"
-      # TODO - link to antora guide
+      url: "/docs/users-guide/features.html"
     - label: "Get started"
-      # TODO - link to antora guide
-      url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin"
+      url: "/docs/users-guide/installation.html"
 excerpt: "A plugin for the IntelliJ platform (IntelliJ IDEA, RubyMine, etc.) that provides support for the AsciiDoc markup language. It also supports Antora, the documentation CMS build with AsciiDoc."
 intro:
   - excerpt: 'This plugin provides a two-pane AsciiDoc preview editor based on <a href="https://github.com/asciidoctor/asciidoctorj">AsciidoctorJ</a> with live preview. Toolbar and context menu for basic formatting and to create tables. Refactor Markdown to AsciiDoc: Right click on a file and the Markdown document will be replaced by the AsciiDoc equivalent.'
@@ -19,10 +17,10 @@ feature_row:
   - image_path: /assets/images/daniel-mccullough-o7BP1GRKk1s-unsplash.jpg
     image_caption: "Photo by [D. McCullough](https://unsplash.com/@d_mccullough) on Unsplash"
     alt: "Typewriter"
-    title: "Writer’s Guide"
+    title: "User’s Guide"
     excerpt: "Learn about the features this plugin provides."
-    # TODO - link to antora guide
-    url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin/blob/master/FEATURES.adoc"
+    # TODO - add a writer's guide instead
+    url: "/docs/users-guide/index.html"
     btn_label: "Be productive!"
     btn_class: "btn--primary"
   - image_path: /assets/images/jon-tyson-hhq1Lxtuwd8-unsplash.jpg
@@ -30,16 +28,14 @@ feature_row:
     alt: "Question Mark"
     title: "FAQ & Trouble Shooting"
     excerpt: "Something is bothering you?"
-    # TODO - link to antora guide
-    url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin/wiki"
+    url: "/docs/users-guide/faq.html"
     btn_label: "Find the solution!"
     btn_class: "btn--primary"
   - image_path: /assets/images/christopher-burns-Wiu3w-99tNg-unsplash.jpg
     title: "Contributor’s Guide"
     image_caption: "Photo by [C. Burns](https://unsplash.com/@christopher__burns) on Unsplash"
     excerpt: "Help out -- not only by coding."
-    # TODO - link to antora guide
-    url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin/blob/master/CONTRIBUTING.adoc"
+    url: "/docs/contributors-guide/index.html"
     btn_label: "Lend a hand!"
     btn_class: "btn--primary"
 ---

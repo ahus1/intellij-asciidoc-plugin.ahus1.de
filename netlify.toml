@@ -1,3 +1,39 @@
 [build]
   command = "./build.sh"
   publish = "_site"
+  functions = "lambda/dist"
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+	cache-control = '''
+	public,
+	max-age=3600,
+	must-revalidate'''
+[[headers]]
+  for = "/docs/antora/*"
+  [headers.values]
+	cache-control = '''
+	public,
+	max-age=3600,
+	must-revalidate'''
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+	cache-control = '''
+	public,
+	max-age=3600,
+	must-revalidate'''
+[[headers]]
+  for = "/browserconfig.xml"
+  [headers.values]
+	cache-control = '''
+	public,
+	max-age=3600,
+	must-revalidate'''
+[[headers]]
+  for = "/favicon*"
+  [headers.values]
+	cache-control = '''
+	public,
+	max-age=3600,
+	must-revalidate'''
