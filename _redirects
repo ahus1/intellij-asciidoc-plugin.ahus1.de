@@ -3,3 +3,7 @@ https://intellij-plugin-asciidoctor-org.netlify.app/* https://asciidoc-intellij-
 
 # any existing resource will be returned directly, any left-over wildcards will be 404
 /* /404.html 404
+
+# this is how antora links the docs, let's do the same
+/docs/users-guide/ /users-guide/index.html
+/docs/contributors-guide/ /users-guide/index.html
