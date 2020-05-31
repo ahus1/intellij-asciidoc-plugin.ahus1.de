@@ -140,19 +140,35 @@ window.antoraLunr = (function (lunr) {
     return searchResultItem
   }
 
-  function search (index, text) {
+  function filter (result, store, component) {
+    return result.filter(item => {
+      var url = item.ref
+      var hash
+      if (url.includes('#')) {
+        hash = url.substring(url.indexOf('#') + 1)
+        url = url.replace('#' + hash, '')
+      }
+      var doc = store[url]
+      return doc.component === component
+    })
+  }
+
+  function search (index, store, text) {
+    var component = window.antora.pagePath.substring(1)
+    component = component.substring(0, component.indexOf("/"))
+
     // execute an exact match search
-    var result = index.search(text)
+    var result = filter(index.search(text), store, component)
     if (result.length > 0) {
       return result
     }
     // no result, use a begins with search
-    result = index.search(text + '*')
+    result = filter(index.search(text + '*'), store, component)
     if (result.length > 0) {
       return result
     }
     // no result, use a contains search
-    result = index.search('*' + text + '*')
+    result = filter(index.search('*' + text + '*'), store, component)
     return result
   }
 
@@ -164,7 +180,7 @@ window.antoraLunr = (function (lunr) {
     if (text.trim() === '') {
       return
     }
-    var result = search(index, text)
+    var result = search(index, store, text)
     var searchResultDataset = document.createElement('div')
     searchResultDataset.classList.add('search-result-dataset')
     searchResult.appendChild(searchResultDataset)
