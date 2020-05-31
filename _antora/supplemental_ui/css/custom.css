@@ -93,3 +93,9 @@ footer.footer {
         width: 32px;
     }
 }
+
+/* avoid jumping navigation due to changing width of bold font weight when a nav link becomes active */
+.is-current-page > .nav-link, .is-current-page > .nav-text {
+    font-weight: normal;
+    text-shadow: 1px 0 0 black;
+}
