@@ -1,6 +1,6 @@
-= Website for the AsciiDoc IntelliJ plugin
+= Website for the IntelliJ AsciiDoc Plugin
 
-The IntelliJ AsciiDoc plugin extends the IntelliJ based IDEs to write documents in the https://asciidoctor.org/[AsciiDoc language].
+The IntelliJ AsciiDoc Plugin extends the IntelliJ based IDEs to write documents in the https://asciidoctor.org/[AsciiDoc language].
 This repository contains all scripts necessary to publish the plugin's homepage https://intellij-asciidoc-plugin.ahus1.de/.
 
 Read more about how this documentation is built and how to contribute in the https://intellij-asciidoc-plugin.ahus1.de/docs/contributors-guide/contributing-documentation.html[Contributor's guide].
