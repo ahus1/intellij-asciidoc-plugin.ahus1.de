@@ -5,7 +5,7 @@ permalink: /imprint
 sitemap: false
 ---
 
-As I live in Germany, and most likely need to satisfy German laws this site needs a German imprint.
+(As this site is registered in Germany, and it needs to satisfy German laws, the following text is provided in German only)
 
 '''
 

@@ -31,7 +31,10 @@ footer:
       url: "https://github.com/asciidoctor/asciidoctor-intellij-plugin"
     - label: "Imprint"
       icon: "fas fa-balance-scale-right"
-      url: "/imprint/"
+      url: "/imprint"
+    - label: "Privacy"
+      icon: "fas fa-shield-alt"
+      url: "/privacy"
 name: Alexander Schwartz
 repository: asciidoctor/asciidoctor-intellij-plugin
 logo: assets/images/ad-logo.svg
