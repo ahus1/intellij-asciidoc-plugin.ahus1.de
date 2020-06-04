@@ -1,7 +1,7 @@
 site:
   title: IntelliJ AsciiDoc Plugin
   # the 404, site-map, and canonical urls are only generated when a url is defined
-  url: https://intellij-asciidoc-plugin.ahus1.de/
+  url: https://intellij-asciidoc-plugin.ahus1.de/docs
   start_page: users-guide::index.adoc
 content:
   sources:
