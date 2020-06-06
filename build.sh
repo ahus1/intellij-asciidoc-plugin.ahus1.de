@@ -8,8 +8,9 @@ jekyll build --source startpage --destination _site
 # configure netlify
 cp _redirects _site/_redirects
 
-# prepare antora
+# prepare antora: enable document search; override URL environment variable as Antora "looks" at it
 export DOCSEARCH_ENABLED=true && export DOCSEARCH_ENGINE=lunr && \
+export URL=${URL}/docs && \
 yarn install && \
 echo "monkey-patch antora-lunr for https://github.com/Mogztter/antora-lunr/pull/56 / will be part of v0.7.2+ " && \
 cp _antora/generate-index.js node_modules/antora-lunr/lib && \
