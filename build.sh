@@ -15,6 +15,7 @@ yarn install && \
 echo "monkey-patch antora-lunr for https://github.com/Mogztter/antora-lunr/pull/56 / will be part of v0.7.2+ " && \
 cp _antora/generate-index.js node_modules/antora-lunr/lib && \
 yarn build
+cat _site/docs/_redirects >> _site/_redirects
 
 # preparing lambda
 cd lambda

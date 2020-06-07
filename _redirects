@@ -5,5 +5,5 @@ https://intellij-plugin-asciidoctor-org.netlify.app/* https://asciidoc-intellij-
 /* /404.html 404
 
 # this is how antora links the docs, let's do the same
-/docs/users-guide/ /users-guide/index.html
-/docs/contributors-guide/ /users-guide/index.html
+/docs/users-guide/ /users-guide/index.html 301!
+/docs/contributors-guide/ /users-guide/index.html 301!
