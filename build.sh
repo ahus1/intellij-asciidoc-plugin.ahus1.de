@@ -17,6 +17,9 @@ cp _antora/generate-index.js node_modules/antora-lunr/lib && \
 yarn build
 cat _site/docs/_redirects >> _site/_redirects
 
+# debugging
+cat _site/_redirects
+
 # preparing lambda
 cd lambda
 yarn install
