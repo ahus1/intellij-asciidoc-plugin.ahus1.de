@@ -14,7 +14,7 @@ cp _antora/generate-index.js node_modules/antora-lunr/lib && \
 yarn build
 
 # configure netlify
-cat _redirects_top _site/_redirects
+cat _redirects_top >> _site/_redirects
 cat _site/docs/_redirects >> _site/_redirects
 cat _redirects_end >> _site/_redirects
 
