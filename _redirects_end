@@ -1,0 +1,2 @@
+# any existing resource will be returned directly, any left-over wildcards will be 404
+/* /404.html 404
