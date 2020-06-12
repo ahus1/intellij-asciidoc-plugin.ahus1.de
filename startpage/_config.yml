@@ -35,7 +35,7 @@ footer:
     - label: "Privacy"
       icon: "fas fa-shield-alt"
       url: "/privacy"
-name: Alexander Schwartz
+name: Julien Viet, Erik Pragt, Alexander Schwartz and the individual contributors. Released under the Apache License, Version 2.0
 repository: asciidoctor/asciidoctor-intellij-plugin
 logo: assets/images/ad-logo.svg
 # Build settings
