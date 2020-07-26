@@ -10,10 +10,13 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7-java)
+    eventmachine (1.2.7-x64-mingw32)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.12.2-java)
+    ffi (1.12.2-x64-mingw32)
     forwardable-extended (2.6.0)
+    http_parser.rb (0.6.0)
     http_parser.rb (0.6.0-java)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -79,6 +82,7 @@ GEM
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
+    thread_safe (0.3.6)
     thread_safe (0.3.6-java)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
@@ -87,6 +91,7 @@ GEM
 
 PLATFORMS
   java
+  x64-mingw32
 
 DEPENDENCIES
   jekyll (~> 3.8.6)
