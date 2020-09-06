@@ -28,7 +28,10 @@ output:
 
 # Global asciidoc attributes here, used across all versions of documentation
 asciidoc:
+  extensions:
+    - asciidoctor-kroki
   attributes:
-    idprefix:
+    kroki-fetch-diagram: true
+    idprefix: ''
     idseparator: '-'
 
