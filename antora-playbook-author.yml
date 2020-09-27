@@ -24,6 +24,7 @@ runtime:
   cache_dir: ./.cache/antora
 
 output:
+  clean: true
   dir: _site/docs
 
 # Global asciidoc attributes here, used across all versions of documentation
