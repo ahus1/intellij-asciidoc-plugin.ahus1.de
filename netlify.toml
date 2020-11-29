@@ -37,8 +37,3 @@
 	public,
 	max-age=3600,
 	must-revalidate'''
-[[headers]]
-  for = "/docs/antora/css/fonts/*"
-  [header.values]
-    # allow fetching fonts when using a local file-based preview in the IDE
-    Access-Control-Allow-Origin = "file:///jbcefbrowser/"
