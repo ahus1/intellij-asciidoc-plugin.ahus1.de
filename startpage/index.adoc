@@ -12,7 +12,7 @@ header:
       url: "/docs/users-guide/installation.html"
 excerpt: "A plugin for the IntelliJ platform (IntelliJ IDEA, RubyMine, etc.) that provides support for the AsciiDoc markup language. It also supports Antora, the documentation CMS build with AsciiDoc."
 intro:
-  - excerpt: 'This plugin provides a two-pane AsciiDoc preview editor based on <a href="https://github.com/asciidoctor/asciidoctorj">AsciidoctorJ</a> with live preview. Toolbar and context menu for basic formatting and to create tables. Refactor Markdown to AsciiDoc: Right click on a file and the Markdown document will be replaced by the AsciiDoc equivalent.'
+  - excerpt: 'This plugin provides a two-pane AsciiDoc preview editor based on <a href="https://asciidoctor.org/">Asciidoctor</a> with live preview. Toolbar and context menu for basic formatting and to create tables. Refactor Markdown to AsciiDoc: Right click on a file and the Markdown document will be replaced by the AsciiDoc equivalent.'
 feature_row:
   - image_path: /assets/images/daniel-mccullough-o7BP1GRKk1s-unsplash.jpg
     image_caption: "Photo by [D. McCullough](https://unsplash.com/@d_mccullough) on Unsplash"
