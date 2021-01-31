@@ -131,6 +131,10 @@ Wir, bzw. unser Hostinganbieter, erhebt auf Grundlage unserer berechtigten Inter
 
 Logfile-Informationen werden aus Sicherheitsgründen (z.&nbsp;B. zur Aufklärung von Missbrauchs- oder Betrugshandlungen) für die Dauer von maximal 30 Tagen gespeichert und danach gelöscht. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des jeweiligen Vorfalls von der Löschung ausgenommen.
 
+Wenn eine Seite aufgerufen wird, die nicht existiert (404), so sammeln wir Informationen über diesen Fehler, so dass wir ggf. unsere Links und Seiten anpassen können.
+Hierfür benutzen wir einen Cloud-Service von https://sentry.io/security/[Sentry,opts=nofollow].
+Nutzer können auf freiwilliger Basis zusätzliche Angaben zum aufgetretenen Problem machen.
+
 == Onlinepräsenzen in sozialen Medien
 
 Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und Plattformen, um mit den dort aktiven Kunden, Interessenten und Nutzern kommunizieren und sie dort über unsere Leistungen informieren zu können.
@@ -149,4 +153,4 @@ Für eine detaillierte Darstellung der jeweiligen Verarbeitungen und der Widersp
 
 Auch im Fall von Auskunftsanfragen und der Geltendmachung von Nutzerrechten, weisen wir darauf hin, dass diese am effektivsten bei den Anbietern geltend gemacht werden können. Nur die Anbieter haben jeweils Zugriff auf die Daten der Nutzer und können direkt entsprechende Maßnahmen ergreifen und Auskünfte geben. Sollten Sie dennoch Hilfe benötigen, dann können Sie sich an uns wenden.
 
-Vom Websiteinhaber angepasst. https://datenschutz-generator.de/[Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke]
+Vom Websiteinhaber angepasst. https://datenschutz-generator.de/[Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke,opts=nofollow]

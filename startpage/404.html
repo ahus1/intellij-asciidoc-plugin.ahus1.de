@@ -22,3 +22,23 @@ layout: default
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+<script
+        src="https://browser.sentry-cdn.com/6.0.2/bundle.min.js"
+        integrity="sha384-mPF153CKKRhOGUecfj8Bo9gMzP/39GkWXC498PTR2t9NU6SRnQQpCM2b3hiUTsEo"
+        crossorigin="anonymous"
+></script>
+
+<script>
+  Sentry.init({
+    dsn: "https://ad6d66fcd1704192b283e054a3e68ba8@o502663.ingest.sentry.io/5585225",
+    beforeSend(event, hint) {
+      // Check if it is an exception, and if so, show the report dialog
+      if (event.exception) {
+        Sentry.showReportDialog({ eventId: event.event_id, lang: 'en' });
+      }
+      return event;
+    },
+  });
+  Sentry.captureException("Page missing: location: " + window.location.href);
+</script>
