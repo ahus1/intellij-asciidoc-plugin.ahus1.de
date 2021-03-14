@@ -43,7 +43,7 @@ GEM
     jekyll-asciidoc (3.0.0)
       asciidoctor (>= 1.5.0)
       jekyll (>= 3.0.0)
-    jekyll-feed (0.15.0)
+    jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
@@ -111,7 +111,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.1.1)
   jekyll-asciidoc
-  jekyll-feed (~> 0.6)
+  jekyll-feed (~> 0.15)
   minimal-mistakes-jekyll
   tzinfo (~> 1.2)
   tzinfo-data
