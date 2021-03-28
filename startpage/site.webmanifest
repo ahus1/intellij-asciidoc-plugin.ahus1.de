@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "IntelliJ AsciiDoc Plugin",
+    "short_name": "IntelliJ AsciiDoc Plugin",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,6 +13,7 @@
             "type": "image/png"
         }
     ],
+    "lang": "en-US",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
