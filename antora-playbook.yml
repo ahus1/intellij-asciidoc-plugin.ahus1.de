@@ -10,7 +10,7 @@ content:
         - doc/users-guide
         - doc/contributors-guide
       branches:
-        - 'master'
+        - 'main'
 
 ui:
   bundle:
