@@ -18,13 +18,13 @@
     asciidoctor.js "1.5.9"
     opal-runtime "1.0.11"
 
-"@antora/cli@^3.0.0-alpha.1":
-  version "3.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-alpha.1.tgz#8f8da472304d60a9ffb9f24130954ff8370f1700"
-  integrity sha512-Hn3yCkM4rqAM4UQ2RuWGoXwyzT8Tna6HRfCSVWaBLn4KXYS7FMcA+ODobR8DHP4IaBO15IS+KXIy0o9ga5CTZA==
+"@antora/cli@^3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-alpha.2.tgz#001a9dd026625e44228832212b68858629ee831c"
+  integrity sha512-vegT7X2yu3iY5vNg8QanBWBKGMf+CJ/9OK7KecujKu34f2yWgeBjcpZ4Cb0ybcnLtfS8JO7awNG9m2vekM7G1Q==
   dependencies:
-    "@antora/playbook-builder" "3.0.0-alpha.1"
-    commander "~6.1"
+    "@antora/playbook-builder" "3.0.0-alpha.2"
+    commander "~6.2"
 
 "@antora/content-aggregator@3.0.0-alpha.2":
   version "3.0.0-alpha.2"
@@ -128,17 +128,6 @@
   dependencies:
     handlebars "~4.7"
     require-from-string "~2.0"
-
-"@antora/playbook-builder@3.0.0-alpha.1":
-  version "3.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-alpha.1.tgz#4499acbd30f28e86e84632460865e80ac2381a77"
-  integrity sha512-iMuFKtSNbClEBPoYheQA4mY3LKT1uopRBL4GoHEAxVYqp1v/Jq/PUFHVaXk27FkCgMgBwyqSNCfhj8tt7z/AQw==
-  dependencies:
-    "@iarna/toml" "~2.2"
-    camelcase-keys "~6.2"
-    convict "~6.0"
-    js-yaml "~3.14"
-    json5 "~2.1"
 
 "@antora/playbook-builder@3.0.0-alpha.2":
   version "3.0.0-alpha.2"
@@ -617,10 +606,10 @@ colors@^1.4.0:
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
 
-commander@~6.1:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-6.1.0.tgz#f8d722b78103141006b66f4c7ba1e97315ba75bc"
-  integrity sha512-wl7PNrYWd2y5mp1OK/LhTlv8Ff4kQJQRXXAvF+uU/TPNiVJUxZLRYGj/B0y/lPGAVcSbJqH2Za/cvHmrPMC8mA==
+commander@~6.2:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
+  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
 concat-map@0.0.1:
   version "0.0.1"
