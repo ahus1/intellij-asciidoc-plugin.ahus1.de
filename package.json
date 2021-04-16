@@ -13,8 +13,21 @@
     "@antora/cli": "^3.0.0-alpha.3",
     "@antora/site-generator-default": "^3.0.0-alpha.3",
     "antora-lunr": "^0.8.0",
-    "antora-site-generator-lunr": "^0.5.0",
+    "antora-site-generator-lunr": "git+https://github.com/Mogztter/antora-site-generator-lunr.git#56df42e776f548046c911b16510e86fcdb379777",
     "asciidoctor-kroki": "^0.12.0",
     "http-server": "^0.12.3"
+  },
+  "resolutions": {
+    "@antora/asciidoc-loader": "^3.0.0-alpha.3",
+    "@antora/content-aggregator": "^3.0.0-alpha.3",
+    "@antora/content-classifier": "^3.0.0-alpha.3",
+    "@antora/document-converter": "^3.0.0-alpha.3",
+    "@antora/navigation-builder": "^3.0.0-alpha.3",
+    "@antora/page-composer": "^3.0.0-alpha.3",
+    "@antora/playbook-builder": "^3.0.0-alpha.3",
+    "@antora/redirect-producer": "2",
+    "@antora/site-mapper": "^3.0.0-alpha.3",
+    "@antora/site-publisher": "^3.0.0-alpha.3",
+    "@antora/ui-loader": "^3.0.0-alpha.3"
   }
 }
