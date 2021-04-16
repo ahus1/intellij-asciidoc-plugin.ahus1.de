@@ -7,8 +7,7 @@
   [headers.values]
 	cache-control = '''
 	public,
-	max-age=3600,
-	must-revalidate'''
+	max-age=3600'''
 [[headers]]
   for = "/docs/antora/*"
   [headers.values]
@@ -17,12 +16,29 @@
 	max-age=3600,
 	must-revalidate'''
 [[headers]]
+  for = "/docs/antora/fonts/*"
+  [headers.values]
+    cache-control = '''
+	public,
+	max-age=3600'''
+[[headers]]
+  for = "/docs/antora/img/*"
+  [headers.values]
+  cache-control = '''
+	public,
+	max-age=3600'''
+[[headers]]
+  for = "/docs/antora/js/*"
+  [headers.values]
+  cache-control = '''
+	public,
+	max-age=3600'''
+[[headers]]
   for = "/site.webmanifest"
   [headers.values]
 	cache-control = '''
 	public,
-	max-age=3600,
-	must-revalidate'''
+	max-age=3600'''
 [[headers]]
   for = "/browserconfig.xml"
   [headers.values]
