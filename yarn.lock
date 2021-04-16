@@ -18,12 +18,12 @@
     asciidoctor.js "1.5.9"
     opal-runtime "1.0.11"
 
-"@antora/cli@^3.0.0-alpha.2":
-  version "3.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-alpha.2.tgz#001a9dd026625e44228832212b68858629ee831c"
-  integrity sha512-vegT7X2yu3iY5vNg8QanBWBKGMf+CJ/9OK7KecujKu34f2yWgeBjcpZ4Cb0ybcnLtfS8JO7awNG9m2vekM7G1Q==
+"@antora/cli@^3.0.0-alpha.3":
+  version "3.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-alpha.3.tgz#8ad0dd7c6dd2d52e0ac12db3e4026e36a166e5f8"
+  integrity sha512-y1vaX7nGuppstR6wmQePRyMCS3wMcmoh4pRwg4PmyGgZ9qxE3N++YQS6nDcwOfZyOP4o3twiVnUSnSNStOVkFQ==
   dependencies:
-    "@antora/playbook-builder" "3.0.0-alpha.2"
+    "@antora/playbook-builder" "3.0.0-alpha.3"
     commander "~6.2"
 
 "@antora/content-aggregator@3.0.0-alpha.2":
@@ -138,6 +138,17 @@
     camelcase-keys "~6.2"
     convict "~6.0"
     js-yaml "~4.0"
+    json5 "~2.2"
+
+"@antora/playbook-builder@3.0.0-alpha.3":
+  version "3.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-alpha.3.tgz#9f16a0a009c250359654d4ea71b5b73000fdc3f1"
+  integrity sha512-HCPoVi9A0hVDaEb0aoTL7VggKjTuCl1WI1lbpjrmjtvIpKUJOq1ixWqxYjCmU66xsxW3yDuJHnimGI63TOtg9g==
+  dependencies:
+    "@iarna/toml" "~2.2"
+    camelcase-keys "~6.2"
+    convict "~6.0"
+    js-yaml "~4.1"
     json5 "~2.2"
 
 "@antora/playbook-builder@~2":
@@ -1232,6 +1243,13 @@ js-yaml@~4.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.0.0.tgz#f426bc0ff4b4051926cd588c71113183409a121f"
   integrity sha512-pqon0s+4ScYUvX30wxQi3PogGFAlUyH0awepWvwkj4jD4v+ova3RiYw8bmA6x2rDrEaj8i/oWKoRxpVNW+Re8Q==
+  dependencies:
+    argparse "^2.0.1"
+
+js-yaml@~4.1:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
   dependencies:
     argparse "^2.0.1"
 
