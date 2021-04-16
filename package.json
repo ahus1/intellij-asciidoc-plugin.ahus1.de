@@ -14,6 +14,7 @@
     "@antora/site-generator-default": "^3.0.0-alpha.3",
     "antora-lunr": "^0.8.0",
     "antora-site-generator-lunr": "git+https://github.com/Mogztter/antora-site-generator-lunr.git#56df42e776f548046c911b16510e86fcdb379777",
+    "asciidoctor-highlight.js": "^0.3.0",
     "asciidoctor-kroki": "^0.12.0",
     "http-server": "^0.12.3"
   },
