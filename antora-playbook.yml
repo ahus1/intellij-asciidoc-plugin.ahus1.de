@@ -31,8 +31,10 @@ output:
 asciidoc:
   extensions:
     - asciidoctor-kroki
+    - asciidoctor-highlight.js
   attributes:
     kroki-fetch-diagram: true
     idprefix: ''
     idseparator: '-'
+    source-highlighter: highlightjs-ext
 
