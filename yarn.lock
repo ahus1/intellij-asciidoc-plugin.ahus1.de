@@ -209,9 +209,10 @@ antora-lunr@0.8.0, antora-lunr@^0.8.0:
     html-entities "^1.2.1"
     lunr "2.3.8"
 
-"antora-site-generator-lunr@git+https://github.com/Mogztter/antora-site-generator-lunr.git#56df42e776f548046c911b16510e86fcdb379777":
-  version "0.5.0"
-  resolved "git+https://github.com/Mogztter/antora-site-generator-lunr.git#56df42e776f548046c911b16510e86fcdb379777"
+antora-site-generator-lunr@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/antora-site-generator-lunr/-/antora-site-generator-lunr-0.6.1.tgz#74c746cf9eece88875d68b2683ce633a9544418d"
+  integrity sha512-BUzf7Q97IJi0bywgLcps7QH9p68zfzYGr0AnBOQoYBhMgt9Lsj/P272qBnxVELA1yTqBpx+ckqenTb11tFSMZw==
   dependencies:
     antora-lunr "0.8.0"
   optionalDependencies:
