@@ -9,12 +9,12 @@
   dependencies:
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.0.0-alpha.4":
-  version "3.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-alpha.4.tgz#7e03caf620876fbca1bd835959cc9ba9bd1a5609"
-  integrity sha512-SRH6nPtU5k+Ll/UForPUWUQidcjaOORf3YwDyEJr0U+R6dVD8M213mT3GwEF0XgDLhMe1nU7k4saj4QF6dH+zg==
+"@antora/cli@^3.0.0-alpha.5":
+  version "3.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-alpha.5.tgz#8543ca98b4df7c33bc78475e85d1b43d3c84093d"
+  integrity sha512-AznHSrhv3GQFUZdzMtYpGItovGLcE4ov0Zs+Y7TMowLuK3+gFVBYFnuGrMMS++An0XkK1yoZ3+ti+McFyyWNpg==
   dependencies:
-    "@antora/playbook-builder" "3.0.0-alpha.4"
+    "@antora/playbook-builder" "3.0.0-alpha.5"
     commander "~6.2"
 
 "@antora/content-aggregator@3.0.0-alpha.4", "@antora/content-aggregator@^3.0.0-alpha.4", "@antora/content-aggregator@~2":
@@ -70,7 +70,7 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/playbook-builder@3.0.0-alpha.4", "@antora/playbook-builder@^3.0.0-alpha.4", "@antora/playbook-builder@~2":
+"@antora/playbook-builder@3.0.0-alpha.4", "@antora/playbook-builder@3.0.0-alpha.5", "@antora/playbook-builder@^3.0.0-alpha.4", "@antora/playbook-builder@~2":
   version "3.0.0-alpha.4"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-alpha.4.tgz#3ffade80cad0e089977719dcf0fa5b2d9f1b085f"
   integrity sha512-NZi4X8eEJgNzA+aQDt8t1OaA4xrkFx2gHujdEpyZ1EopfYj1i5jFtijNOYV9gbIkXOZIMLsRxCvvM+/prjBA0g==
