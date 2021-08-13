@@ -15,7 +15,7 @@
     "antora-lunr": "^0.8.0",
     "antora-site-generator-lunr": "^0.6.1",
     "asciidoctor-highlight.js": "^0.3.0",
-    "asciidoctor-kroki": "^0.13.0",
+    "asciidoctor-kroki": "^0.14.0",
     "http-server": "^13.0.0"
   },
   "resolutions": {
