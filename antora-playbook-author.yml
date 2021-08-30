@@ -31,7 +31,9 @@ output:
 asciidoc:
   extensions:
     - asciidoctor-kroki
-    - asciidoctor-highlight.js
+    # Antora will resolve extensions listed here that end with something that looks like a file name extension as files relative to the project's folder
+    # therefore append the slash
+    - asciidoctor-highlight.js/
   attributes:
     kroki-fetch-diagram: true
     idprefix: ''
