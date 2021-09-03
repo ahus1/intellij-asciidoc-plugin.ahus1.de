@@ -1,3 +1,3 @@
 = Contributing to the website
 
-Read more about how this documentation is built in the https://intellij-asciidoc-plugin.ahus1.de/docs/contributors-guide/contributing-documentation.html[Contributor's guide].
+Read more about how this documentation is built in the https://intellij-asciidoc-plugin.ahus1.de/docs/contributors-guide/contribute-as-a-writer.html[Contributor's guide for writers].

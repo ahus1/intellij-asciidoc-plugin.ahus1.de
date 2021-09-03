@@ -3,4 +3,6 @@
 The IntelliJ AsciiDoc Plugin extends the IntelliJ based IDEs to write documents in the https://asciidoctor.org/[AsciiDoc language].
 This repository contains all scripts necessary to publish the plugin's homepage https://intellij-asciidoc-plugin.ahus1.de/.
 
-Read more about how this documentation is built and how to contribute in link:https://github.com/asciidoctor/.github/blob/main/CODE-OF-CONDUCT.md[Asciidoctor Community Code of Conduct]..
+Read more about how this documentation is built and how to contribute https://intellij-asciidoc-plugin.ahus1.de/docs/contributors-guide/contribute-as-a-writer.html[in the plugin's guide for writers].
+
+We follow the link:https://github.com/asciidoctor/.github/blob/main/CODE-OF-CONDUCT.md[Asciidoctor Community Code of Conduct].
