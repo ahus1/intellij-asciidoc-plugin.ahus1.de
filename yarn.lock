@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@antora/asciidoc-loader@3.0.0-alpha.9", "@antora/asciidoc-loader@^3.0.0-alpha.9", "@antora/asciidoc-loader@~2":
+"@antora/asciidoc-loader@3.0.0-alpha.10", "@antora/asciidoc-loader@3.0.0-alpha.9", "@antora/asciidoc-loader@^3.0.0-alpha.9", "@antora/asciidoc-loader@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/asciidoc-loader/-/asciidoc-loader-3.0.0-alpha.9.tgz#4be67a8780b6449e42eaabe9c5b6d65075a4e584"
   integrity sha512-fAhx0BdNtEWy6p26Cde5sXlm5KfNAEiNrvuA57CvP88bZAyoeEkW5DqPZBbAIKpu4RNNFLKhWHQ8h2UCsxFxAQ==
@@ -21,7 +21,7 @@
     "@antora/user-require-helper" "~2.0"
     commander "~7.2"
 
-"@antora/content-aggregator@3.0.0-alpha.9", "@antora/content-aggregator@^3.0.0-alpha.9", "@antora/content-aggregator@~2":
+"@antora/content-aggregator@3.0.0-alpha.10", "@antora/content-aggregator@^3.0.0-alpha.9", "@antora/content-aggregator@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/content-aggregator/-/content-aggregator-3.0.0-alpha.9.tgz#908a619e3c7d7406f451594c0c400cf0e8bffa3c"
   integrity sha512-sxJpLDky6PPBeC0KX9LL/7Q2/SCu3gOhZW/7tGqZXClu6o2lDIXnIYNQYULIpjjbUIy+Yg4lcTjf+o0Xn+hR6w==
@@ -43,7 +43,7 @@
     vinyl "~2.2"
     vinyl-fs "~3.0"
 
-"@antora/content-classifier@3.0.0-alpha.9", "@antora/content-classifier@^3.0.0-alpha.9", "@antora/content-classifier@~2":
+"@antora/content-classifier@3.0.0-alpha.10", "@antora/content-classifier@3.0.0-alpha.9", "@antora/content-classifier@^3.0.0-alpha.9", "@antora/content-classifier@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/content-classifier/-/content-classifier-3.0.0-alpha.9.tgz#e3d76231e6e9a1bcfc70e1e1370394793475f07a"
   integrity sha512-LlE/claJ+lE7M/kBPILMYXD9IpcSHFH3Fn1AgqUJbstYeKRpLbHJCKAaoRSJEvBB4JBuVBx19oV6NhD8pUpDPw==
@@ -52,7 +52,7 @@
     mime-types "~2.1"
     vinyl "~2.2"
 
-"@antora/document-converter@3.0.0-alpha.9", "@antora/document-converter@^3.0.0-alpha.9", "@antora/document-converter@~2":
+"@antora/document-converter@3.0.0-alpha.10", "@antora/document-converter@^3.0.0-alpha.9", "@antora/document-converter@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/document-converter/-/document-converter-3.0.0-alpha.9.tgz#3cccf076a14a7ee4c80361a9f9b7793b9f6a8cbb"
   integrity sha512-/WxTBjsT+cHQOEvRNnMT6Ox3WZcDPU+QkRjIZcmdxE4uu1yfrJ/YEHi9gA6Yzvs92Ai02AzrRtEs3P4vK1+1Ag==
@@ -74,14 +74,14 @@
     pino-pretty "~6.0"
     sonic-boom "~2.1"
 
-"@antora/navigation-builder@3.0.0-alpha.9", "@antora/navigation-builder@^3.0.0-alpha.9", "@antora/navigation-builder@~2":
+"@antora/navigation-builder@3.0.0-alpha.10", "@antora/navigation-builder@^3.0.0-alpha.9", "@antora/navigation-builder@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/navigation-builder/-/navigation-builder-3.0.0-alpha.9.tgz#7741bf84fbc8b5eb050624bd30f3bc45ddc297ee"
   integrity sha512-i6BIC7AxfbDHaI8jAttmusa/2Xme7AF/M0EzZw7+5p/NVMBgx2NqTJsu0HXK9mg8sue2Mb3SvhXLQEe5PRvUpA==
   dependencies:
     "@antora/asciidoc-loader" "3.0.0-alpha.9"
 
-"@antora/page-composer@3.0.0-alpha.9", "@antora/page-composer@^3.0.0-alpha.9", "@antora/page-composer@~2":
+"@antora/page-composer@3.0.0-alpha.10", "@antora/page-composer@^3.0.0-alpha.9", "@antora/page-composer@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/page-composer/-/page-composer-3.0.0-alpha.9.tgz#442ff3cc3bf65c27b2a6cb3eeac618b67ed6642f"
   integrity sha512-GAy2GCVcGxfxANSViuZ212T1dtfcIGbiFeCzkefhCsU56h4FVe/dorv7KSWf1bnmVoibHKaX18JaRU4GidDfww==
@@ -90,7 +90,7 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/playbook-builder@3.0.0-alpha.9", "@antora/playbook-builder@^3.0.0-alpha.9", "@antora/playbook-builder@~2":
+"@antora/playbook-builder@3.0.0-alpha.10", "@antora/playbook-builder@3.0.0-alpha.9", "@antora/playbook-builder@^3.0.0-alpha.9", "@antora/playbook-builder@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-alpha.9.tgz#7e6f51a5061c0f85034569e20cf9f9aff6017c04"
   integrity sha512-gP27VisP+4a3MR+g6YenLFRVlc4yUAom0tHue7yQsqXxE8JyEwccPM3FpbubAWuBj4ETzILvfIy6odBwBdRyHA==
@@ -102,7 +102,7 @@
     js-yaml "~4.1"
     json5 "~2.2"
 
-"@antora/redirect-producer@2", "@antora/redirect-producer@3.0.0-alpha.9", "@antora/redirect-producer@^3.0.0-alpha.9":
+"@antora/redirect-producer@2", "@antora/redirect-producer@3.0.0-alpha.10", "@antora/redirect-producer@^3.0.0-alpha.9":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/redirect-producer/-/redirect-producer-3.0.0-alpha.9.tgz#987604ab0cf8ab42617b3c5c7340b183cc3dafa2"
   integrity sha512-F4M+dv/230WIHWTic2i6+tRAHZLNGnFlHJvSuS09K0tQ40Z50ToUe0q6267H0DPo55slUZ1wBqeD89aN+5HPnQ==
@@ -110,25 +110,25 @@
     "@antora/asciidoc-loader" "3.0.0-alpha.9"
     vinyl "~2.2"
 
-"@antora/site-generator-default@^3.0.0-alpha.9":
-  version "3.0.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@antora/site-generator-default/-/site-generator-default-3.0.0-alpha.9.tgz#4136cf3051cb2577aec1d9770a6217629218d9db"
-  integrity sha512-wd199dIHCsPxqi+1WzKyaTCpLZTg9vNmOZRBzJXrqZg6/YE4IzY0+c5M5FSYTDgCmRyT1SvBbcZUXDd8thQkog==
+"@antora/site-generator-default@^3.0.0-alpha.10":
+  version "3.0.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@antora/site-generator-default/-/site-generator-default-3.0.0-alpha.10.tgz#2d9acb1a32836c83a8bae8ef7d98821df8c032af"
+  integrity sha512-6QhENIBu3mNGgfBIl+gC67YUJHV1j8EkGz4kWdqfL4P6a93/x/EVWT6GiDhAazxSuT7NFYv1kW+RDA0AetCSGg==
   dependencies:
-    "@antora/asciidoc-loader" "3.0.0-alpha.9"
-    "@antora/content-aggregator" "3.0.0-alpha.9"
-    "@antora/content-classifier" "3.0.0-alpha.9"
-    "@antora/document-converter" "3.0.0-alpha.9"
-    "@antora/navigation-builder" "3.0.0-alpha.9"
-    "@antora/page-composer" "3.0.0-alpha.9"
-    "@antora/playbook-builder" "3.0.0-alpha.9"
-    "@antora/redirect-producer" "3.0.0-alpha.9"
-    "@antora/site-mapper" "3.0.0-alpha.9"
-    "@antora/site-publisher" "3.0.0-alpha.9"
-    "@antora/ui-loader" "3.0.0-alpha.9"
+    "@antora/asciidoc-loader" "3.0.0-alpha.10"
+    "@antora/content-aggregator" "3.0.0-alpha.10"
+    "@antora/content-classifier" "3.0.0-alpha.10"
+    "@antora/document-converter" "3.0.0-alpha.10"
+    "@antora/navigation-builder" "3.0.0-alpha.10"
+    "@antora/page-composer" "3.0.0-alpha.10"
+    "@antora/playbook-builder" "3.0.0-alpha.10"
+    "@antora/redirect-producer" "3.0.0-alpha.10"
+    "@antora/site-mapper" "3.0.0-alpha.10"
+    "@antora/site-publisher" "3.0.0-alpha.10"
+    "@antora/ui-loader" "3.0.0-alpha.10"
     "@antora/user-require-helper" "~2.0"
 
-"@antora/site-mapper@3.0.0-alpha.9", "@antora/site-mapper@^3.0.0-alpha.9", "@antora/site-mapper@~2":
+"@antora/site-mapper@3.0.0-alpha.10", "@antora/site-mapper@^3.0.0-alpha.9", "@antora/site-mapper@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/site-mapper/-/site-mapper-3.0.0-alpha.9.tgz#ab4d8e0f1d71251589e6184fce449a2c4328f0c2"
   integrity sha512-9PFPzzmzvNQjMumjlWsgH1nQRWatu+4fyuU7GT682BUYU7A184TcwD3UxVloat7t80QA3TKl+Jp9OwvzVv4Ljg==
@@ -136,7 +136,7 @@
     "@antora/content-classifier" "3.0.0-alpha.9"
     vinyl "~2.2"
 
-"@antora/site-publisher@3.0.0-alpha.9", "@antora/site-publisher@^3.0.0-alpha.9", "@antora/site-publisher@~2":
+"@antora/site-publisher@3.0.0-alpha.10", "@antora/site-publisher@^3.0.0-alpha.9", "@antora/site-publisher@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/site-publisher/-/site-publisher-3.0.0-alpha.9.tgz#57a3be1e0ade67fd531277a08f70c9a954a5e8ff"
   integrity sha512-nTKCMTFWF4dNZbQmzENBIOzeISsdkiyQYbtyMzZJiAt8Eu5SJUfEtT1odovNXmmNqTt4dLORvDU7JArsPHUOBQ==
@@ -147,7 +147,7 @@
     vinyl "~2.2"
     vinyl-fs "~3.0"
 
-"@antora/ui-loader@3.0.0-alpha.9", "@antora/ui-loader@^3.0.0-alpha.9", "@antora/ui-loader@~2":
+"@antora/ui-loader@3.0.0-alpha.10", "@antora/ui-loader@^3.0.0-alpha.9", "@antora/ui-loader@~2":
   version "3.0.0-alpha.9"
   resolved "https://registry.yarnpkg.com/@antora/ui-loader/-/ui-loader-3.0.0-alpha.9.tgz#a1ae92a3db86036f23ba171ba807d19c9e14d36e"
   integrity sha512-cB7j/Lxb1fVf3LiUIFdiHTkEiqgG/ns7ceCa8e8PkLf1rWr04b0ukPz1kDACVfeVWgRDtBGoVajSSe4YXhvRsg==
