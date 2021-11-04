@@ -11,15 +11,15 @@
     "@antora/user-require-helper" "~2.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.0.0-alpha.10":
-  version "3.0.0-alpha.10"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-alpha.10.tgz#eb855261d1bd60d67732a9db5dae672fd03b124a"
-  integrity sha512-2skbERnR2PIH8pBjVxXnMSnVFbSnvb22L5wlL4Dv8q+IG+V6CNnUAwZ0riV+K5FlWHvV7CJLFZ9Fp2PXxaMedw==
+"@antora/cli@^3.0.0-beta.1":
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-beta.1.tgz#dc9eb04907d9f47ee501638cd70168ed9a7a1295"
+  integrity sha512-+c/U7n/Wr90SSZ1uQrc5CASPLXFUNWtlSGb1hM45oDPT/eo9NMx97N2zxo6IBa8I0MxSIcsnb8O69lxIxs0vMg==
   dependencies:
-    "@antora/logger" "3.0.0-alpha.10"
-    "@antora/playbook-builder" "3.0.0-alpha.10"
+    "@antora/logger" "3.0.0-beta.1"
+    "@antora/playbook-builder" "3.0.0-beta.1"
     "@antora/user-require-helper" "~2.0"
-    commander "~7.2"
+    commander "~8.3"
 
 "@antora/content-aggregator@3.0.0-alpha.10", "@antora/content-aggregator@^3.0.0-alpha.10", "@antora/content-aggregator@~2":
   version "3.0.0-alpha.10"
@@ -74,6 +74,16 @@
     pino-pretty "~7.1"
     sonic-boom "~2.1"
 
+"@antora/logger@3.0.0-beta.1":
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.0.0-beta.1.tgz#f0d0965fee19f6138af446320edd4b758d445372"
+  integrity sha512-YahP8MxfOUyFXwiGYIU5314GINYDsHHm2tb+KpxqQ/c+Ii7S0rqcQt8K4DIiwUkmrA0xrr1Pyb1h7n8A6yq+TQ==
+  dependencies:
+    "@antora/expand-path-helper" "~2.0"
+    pino "~6.13"
+    pino-pretty "~7.1"
+    sonic-boom "~2.3"
+
 "@antora/navigation-builder@3.0.0-alpha.10", "@antora/navigation-builder@^3.0.0-alpha.10", "@antora/navigation-builder@~2":
   version "3.0.0-alpha.10"
   resolved "https://registry.yarnpkg.com/@antora/navigation-builder/-/navigation-builder-3.0.0-alpha.10.tgz#6c2f322086cb9c1f822dddd739ff1c2ce8905b42"
@@ -90,7 +100,7 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/playbook-builder@3.0.0-alpha.10", "@antora/playbook-builder@^3.0.0-alpha.10", "@antora/playbook-builder@~2":
+"@antora/playbook-builder@3.0.0-alpha.10", "@antora/playbook-builder@3.0.0-beta.1", "@antora/playbook-builder@^3.0.0-alpha.10", "@antora/playbook-builder@~2":
   version "3.0.0-alpha.10"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-alpha.10.tgz#137c8722529e4889ef09469107092487b5396ef1"
   integrity sha512-9hEEAVNt33L+vsnbw5zULXbdD0FVKMVd1UvPah+rSkUvroP6+GMzNbsK2GNtg2+VtAci0/ChgTPx/Dq3yAinag==
@@ -444,10 +454,10 @@ colors@^1.4.0:
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
 
-commander@~7.2:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
-  integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
+commander@~8.3:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
+  integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1522,6 +1532,13 @@ sonic-boom@~2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-2.1.0.tgz#07b7b181b078aeb5f202019769e4088c70c4f0eb"
   integrity sha512-x2j9LXx27EDlyZEC32gBM+scNVMdPutU7FIKV2BOTKCnPrp7bY5BsplCMQ4shYYR3IhDSIrEXoqb6GlS+z7KyQ==
+  dependencies:
+    atomic-sleep "^1.0.0"
+
+sonic-boom@~2.3:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-2.3.1.tgz#e6572184fb3adf145dbfeccff48141bbd1009e4c"
+  integrity sha512-o0vJPsRiCW5Q0EmRKjNiiYGy2DqSXcxk4mY9vIBSPwmkH/e/vJ2Tq8EECd5NTiO77x8vlVN+ykDjRQJTqf7eKg==
   dependencies:
     atomic-sleep "^1.0.0"
 
