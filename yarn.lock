@@ -240,12 +240,12 @@ args@^5.0.1:
     leven "2.1.0"
     mri "1.1.4"
 
-asciidoctor-highlight.js@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/asciidoctor-highlight.js/-/asciidoctor-highlight.js-0.3.0.tgz#5d81f9255c24c2b66542aee979df01eb3e933009"
-  integrity sha512-L8dPfUoOVAfut4WlsLMe40EdJphaIhMo3d0l2P5rOCB8l1dd+VQfbMNFZWVjkgwri/dXFZ/CW0R5+JSzPdo7iQ==
+asciidoctor-highlight.js@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/asciidoctor-highlight.js/-/asciidoctor-highlight.js-0.4.0.tgz#61ccffd9c2c4fdf3dcc0e9dd59b6806368f8add8"
+  integrity sha512-sachM8RiDUCZZRWI9p3sSRF6ssFyp2j3N/sSU/Zv7oVhaLhlJ8Bgi2g9jT7dKL8RSiOvzpMD87ZsmjidGr1dpw==
   dependencies:
-    highlight.js "^10.4.1"
+    highlight.js ">=10.7.0 <12.0.0"
 
 asciidoctor-kroki@^0.14.0:
   version "0.14.0"
@@ -801,10 +801,10 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-highlight.js@^10.4.1:
-  version "10.7.3"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
-  integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
+"highlight.js@>=10.7.0 <12.0.0":
+  version "11.3.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.3.1.tgz#813078ef3aa519c61700f84fe9047231c5dc3291"
+  integrity sha512-PUhCRnPjLtiLHZAQ5A/Dt5F8cWZeMyj9KRsACsWT+OD6OP0x6dp5OmT5jdx0JgEyPxPZZIPQpRN2TciUT7occw==
 
 hpagent@~0.1.0:
   version "0.1.1"
