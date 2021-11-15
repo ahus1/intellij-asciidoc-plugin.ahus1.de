@@ -14,7 +14,7 @@
     "@antora/site-generator-default": "^3.0.0-beta.1",
     "antora-lunr": "^0.8.0",
     "antora-site-generator-lunr": "^0.6.1",
-    "asciidoctor-highlight.js": "^0.3.0",
+    "asciidoctor-highlight.js": "^0.4.0",
     "asciidoctor-kroki": "^0.14.0",
     "http-server": "^14.0.0"
   },
