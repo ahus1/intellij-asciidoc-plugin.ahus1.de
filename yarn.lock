@@ -11,13 +11,13 @@
     "@antora/user-require-helper" "~2.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.0.0-beta.1":
-  version "3.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-beta.1.tgz#dc9eb04907d9f47ee501638cd70168ed9a7a1295"
-  integrity sha512-+c/U7n/Wr90SSZ1uQrc5CASPLXFUNWtlSGb1hM45oDPT/eo9NMx97N2zxo6IBa8I0MxSIcsnb8O69lxIxs0vMg==
+"@antora/cli@^3.0.0-beta.2":
+  version "3.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-beta.2.tgz#4a6f8ad17f9076ada04adde77773167e51e00a1b"
+  integrity sha512-Fc7ON9SccUUdTkI3egR2i5giQeaBDmctuzYuXFxhNc++md6UY4ecizEYX0ccZ5H0XSmQWDi/UUPcFOcIPoZIGQ==
   dependencies:
-    "@antora/logger" "3.0.0-beta.1"
-    "@antora/playbook-builder" "3.0.0-beta.1"
+    "@antora/logger" "3.0.0-beta.2"
+    "@antora/playbook-builder" "3.0.0-beta.2"
     "@antora/user-require-helper" "~2.0"
     commander "~8.3"
 
@@ -73,6 +73,16 @@
     pino-pretty "~7.1"
     sonic-boom "~2.3"
 
+"@antora/logger@3.0.0-beta.2":
+  version "3.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.0.0-beta.2.tgz#10fd235ec689552e63572aca741e8135f2de0007"
+  integrity sha512-TGuv72RkREaQMk+R1WahIfkKAQrn5kzKCZlF83KKqQApUR2QGpmwHg3vaA0lPaY2N/INDBADex3rEKMKNwSY3g==
+  dependencies:
+    "@antora/expand-path-helper" "~2.0"
+    pino "~7.2"
+    pino-pretty "~7.2"
+    sonic-boom "~2.3"
+
 "@antora/navigation-builder@3.0.0-beta.1", "@antora/navigation-builder@^3.0.0-beta.1", "@antora/navigation-builder@~2":
   version "3.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@antora/navigation-builder/-/navigation-builder-3.0.0-beta.1.tgz#1970efbed7ad071d468427d8bb662864220bb4a9"
@@ -89,7 +99,7 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/playbook-builder@3.0.0-beta.1", "@antora/playbook-builder@^3.0.0-beta.1", "@antora/playbook-builder@~2":
+"@antora/playbook-builder@3.0.0-beta.2", "@antora/playbook-builder@^3.0.0-beta.1", "@antora/playbook-builder@~2":
   version "3.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-beta.1.tgz#da45d62f6df9e561d10474289078390f4783c4ac"
   integrity sha512-7hwlDITMMQG1TCT7sl/RAtYNAeQBJilBvLmec7BIDKT4UmPY/jaUf7jlZ548BEcXX33iAlp87HXFIWu8mJ2DIA==
@@ -692,6 +702,11 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
+get-caller-file@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+  integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
+
 get-intrinsic@^1.0.2:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.1.1.tgz#15f59f376f855c446963948f0d24cd3637b4abc6"
@@ -1161,6 +1176,11 @@ object.assign@^4.0.4:
     has-symbols "^1.0.1"
     object-keys "^1.1.1"
 
+on-exit-leak-free@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/on-exit-leak-free/-/on-exit-leak-free-0.2.0.tgz#b39c9e3bf7690d890f4861558b0d7b90a442d209"
+  integrity sha512-dqaz3u44QbRXQooZLTUKU41ZrzYrcvLISVgbrzbyCMxpmSLJvZ3ZamIJIZ29P6OhZIkNIQKosdeM6t1LYbA9hg==
+
 once@^1.3.0, once@^1.3.1, once@^1.3.2, once@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -1235,6 +1255,14 @@ pino-abstract-transport@^0.4.0:
     duplexify "^4.1.2"
     split2 "^3.2.2"
 
+pino-abstract-transport@^0.5.0, pino-abstract-transport@v0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/pino-abstract-transport/-/pino-abstract-transport-0.5.0.tgz#4b54348d8f73713bfd14e3dc44228739aa13d9c0"
+  integrity sha512-+KAgmVeqXYbTtU2FScx1XS3kNyfZ5TrXY07V96QnUSFqo2gAqlvmaxH67Lj7SWazqsMabf+58ctdTcBgnOLUOQ==
+  dependencies:
+    duplexify "^4.1.2"
+    split2 "^4.0.0"
+
 pino-pretty@~7.1:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/pino-pretty/-/pino-pretty-7.1.0.tgz#bfd16e6919985a141eb8c1c2e5c87d5fa3f7bb77"
@@ -1253,10 +1281,33 @@ pino-pretty@~7.1:
     sonic-boom "^2.2.0"
     strip-json-comments "^3.1.1"
 
+pino-pretty@~7.2:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/pino-pretty/-/pino-pretty-7.2.0.tgz#6cd1500fa47a6e9011e87bb65e129cd4555265f1"
+  integrity sha512-pkZhaF1JiyQt4BRqkLANYWuZTxavmuXh3OHsb8goeQasTFgNdzOECXkZWyPYrA0YMRa8zKoVsCzeYz9lI2NYwA==
+  dependencies:
+    args "^5.0.1"
+    colorette "^2.0.7"
+    dateformat "^4.6.3"
+    fast-safe-stringify "^2.0.7"
+    joycon "^3.0.0"
+    pino-abstract-transport "^0.5.0"
+    pump "^3.0.0"
+    readable-stream "^3.6.0"
+    rfdc "^1.3.0"
+    secure-json-parse "^2.4.0"
+    sonic-boom "^2.2.0"
+    strip-json-comments "^3.1.1"
+
 pino-std-serializers@^3.1.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-3.2.0.tgz#b56487c402d882eb96cd67c257868016b61ad671"
   integrity sha512-EqX4pwDPrt3MuOAAUBMU0Tk5kR/YcCM5fNPEzgCO2zJ5HfX0vbiH9HbJglnyeQsN96Kznae6MWD47pZB5avTrg==
+
+pino-std-serializers@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-4.0.0.tgz#1791ccd2539c091ae49ce9993205e2cd5dbba1e2"
+  integrity sha512-cK0pekc1Kjy5w9V2/n+8MkZwusa6EyyxfeQCB799CQRhRt/CqYKiWs5adeu8Shve2ZNffvfC/7J64A2PJo1W/Q==
 
 pino@~6.13:
   version "6.13.1"
@@ -1270,6 +1321,23 @@ pino@~6.13:
     pino-std-serializers "^3.1.0"
     quick-format-unescaped "^4.0.3"
     sonic-boom "^1.0.2"
+
+pino@~7.2:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-7.2.0.tgz#73cf31d71466d7f8158555eafdb1b9e226d33241"
+  integrity sha512-85EiMfTy2E7S+QSHgaN7oCfnfgxv/8PxG6Yf+CRXUZbRL+Rb9qHQAEATLubjJMSl3RvfrTKNkAP3D2hNNx41Aw==
+  dependencies:
+    fast-redact "^3.0.0"
+    fastify-warning "^0.2.0"
+    get-caller-file "^2.0.5"
+    on-exit-leak-free "^0.2.0"
+    pino-abstract-transport v0.5.0
+    pino-std-serializers "^4.0.0"
+    quick-format-unescaped "^4.0.3"
+    real-require "^0.1.0"
+    safe-stable-stringify "^2.1.0"
+    sonic-boom "^2.2.1"
+    thread-stream "^0.13.0"
 
 portfinder@^1.0.28:
   version "1.0.28"
@@ -1366,6 +1434,11 @@ readable-stream@^3.0.0, readable-stream@^3.1.1, readable-stream@^3.4.0, readable
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
+real-require@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/real-require/-/real-require-0.1.0.tgz#736ac214caa20632847b7ca8c1056a0767df9381"
+  integrity sha512-r/H9MzAWtrv8aSVjPCMFpDMl5q66GqtmmRkRjpHTsp4zBAa+snZyiQNlMONiUmEJcsnaw0wCauJ2GWODr/aFkg==
+
 remove-bom-buffer@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/remove-bom-buffer/-/remove-bom-buffer-3.0.0.tgz#c2bf1e377520d324f623892e33c10cac2c252b53"
@@ -1429,6 +1502,11 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
+
+safe-stable-stringify@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/safe-stable-stringify/-/safe-stable-stringify-2.2.0.tgz#26a52f13a6988de16a0d88e20248f38e8a7d840c"
+  integrity sha512-C6AuMdYPuPV/P1leplHNu0lgc2LAElq/g3TdoksDCIVtBhr78o/CH03bt/9SKqugFbKU9CUjsNlCu0fjtQzQUw==
 
 "safer-buffer@>= 2.1.2 < 3.0.0":
   version "2.1.2"
@@ -1505,7 +1583,7 @@ sonic-boom@^2.2.0:
   dependencies:
     atomic-sleep "^1.0.0"
 
-sonic-boom@~2.3:
+sonic-boom@^2.2.1, sonic-boom@~2.3:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-2.3.1.tgz#e6572184fb3adf145dbfeccff48141bbd1009e4c"
   integrity sha512-o0vJPsRiCW5Q0EmRKjNiiYGy2DqSXcxk4mY9vIBSPwmkH/e/vJ2Tq8EECd5NTiO77x8vlVN+ykDjRQJTqf7eKg==
@@ -1523,6 +1601,11 @@ split2@^3.2.2:
   integrity sha512-9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJwObb6jnLFNGB7Qm73V5HewTROPyxD0C29xqmaI68bQtV+hg==
   dependencies:
     readable-stream "^3.0.0"
+
+split2@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/split2/-/split2-4.1.0.tgz#101907a24370f85bb782f08adaabe4e281ecf809"
+  integrity sha512-VBiJxFkxiXRlUIeyMQi8s4hgvKCSjtknJv/LVYbrgALPwf5zSKmEwV9Lst25AkvMDnvxODugjdl6KZgwKM1WYQ==
 
 stream-shift@^1.0.0:
   version "1.0.1"
@@ -1554,6 +1637,13 @@ supports-color@^5.3.0:
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
   dependencies:
     has-flag "^3.0.0"
+
+thread-stream@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/thread-stream/-/thread-stream-0.13.0.tgz#c68054bdea250c5d8d400caa3233a150d5461cca"
+  integrity sha512-kTMZeX4Dzlb1zZ00/01aerGaTw2i8NE4sWF0TvF1uXewRhCiUjCvatQkvxIvFqauWG2ADFS2Wpd3qBeYL9i3dg==
+  dependencies:
+    real-require "^0.1.0"
 
 through2-filter@^3.0.0:
   version "3.0.0"
