@@ -11,13 +11,13 @@
     "@antora/user-require-helper" "~2.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.0.0-beta.2":
-  version "3.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-beta.2.tgz#4a6f8ad17f9076ada04adde77773167e51e00a1b"
-  integrity sha512-Fc7ON9SccUUdTkI3egR2i5giQeaBDmctuzYuXFxhNc++md6UY4ecizEYX0ccZ5H0XSmQWDi/UUPcFOcIPoZIGQ==
+"@antora/cli@^3.0.0-beta.3":
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-beta.3.tgz#1c09690784e0ddc1a7bd3fc64ed0fe58500a85c8"
+  integrity sha512-bEQO2HIFT4e/REEaCgwS/wppr3dCq/oHnPBb7vLtoMoDEAkIyIor+RaZZ4qNrGOlCxsVQkrP+7CpEvC7/kfa/Q==
   dependencies:
-    "@antora/logger" "3.0.0-beta.2"
-    "@antora/playbook-builder" "3.0.0-beta.2"
+    "@antora/logger" "3.0.0-beta.3"
+    "@antora/playbook-builder" "3.0.0-beta.3"
     "@antora/user-require-helper" "~2.0"
     commander "~8.3"
 
@@ -73,6 +73,16 @@
     pino-pretty "~7.2"
     sonic-boom "~2.3"
 
+"@antora/logger@3.0.0-beta.3":
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.0.0-beta.3.tgz#1b1acfaf6e9ae1f3667b64889be6e38393e9c507"
+  integrity sha512-iZGc+rTiDQ2BXsv+qUXVdffFC5HRv7nz+W9w86sU5kbXugvNmIVcHCoCPtRotnF0PwDBZQRSq6N9gu+gx1s2gA==
+  dependencies:
+    "@antora/expand-path-helper" "~2.0"
+    pino "~7.4"
+    pino-pretty "~7.2"
+    sonic-boom "~2.3"
+
 "@antora/navigation-builder@3.0.0-beta.2", "@antora/navigation-builder@^3.0.0-beta.2", "@antora/navigation-builder@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/navigation-builder/-/navigation-builder-3.0.0-beta.2.tgz#a0f274cac21db4eb0ff39d5198d2742eaa31e5a3"
@@ -89,7 +99,7 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/playbook-builder@3.0.0-beta.2", "@antora/playbook-builder@^3.0.0-beta.2", "@antora/playbook-builder@~2":
+"@antora/playbook-builder@3.0.0-beta.3", "@antora/playbook-builder@^3.0.0-beta.2", "@antora/playbook-builder@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-beta.2.tgz#fe3c2d766157f61b9eac8c65dc661d0ab6cbce92"
   integrity sha512-wp/dsAhwgtu8Tx+GluGs4Q16WBfAoDnCw0NUFrKogYJaSQGSURg1F8Kr34NbOzfzylM7dIoJlsR8+j0M7rMOBA==
@@ -1262,6 +1272,23 @@ pino@~7.2:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/pino/-/pino-7.2.0.tgz#73cf31d71466d7f8158555eafdb1b9e226d33241"
   integrity sha512-85EiMfTy2E7S+QSHgaN7oCfnfgxv/8PxG6Yf+CRXUZbRL+Rb9qHQAEATLubjJMSl3RvfrTKNkAP3D2hNNx41Aw==
+  dependencies:
+    fast-redact "^3.0.0"
+    fastify-warning "^0.2.0"
+    get-caller-file "^2.0.5"
+    on-exit-leak-free "^0.2.0"
+    pino-abstract-transport v0.5.0
+    pino-std-serializers "^4.0.0"
+    quick-format-unescaped "^4.0.3"
+    real-require "^0.1.0"
+    safe-stable-stringify "^2.1.0"
+    sonic-boom "^2.2.1"
+    thread-stream "^0.13.0"
+
+pino@~7.4:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-7.4.1.tgz#ccac88e77563bab9b1ced05521b5eb94f17ec7e1"
+  integrity sha512-dVqLxCSsINhHJQP9wXplhYtSFwNLrFtOeVK/gWeprF+KVlibR0zePBPRPZjWzWeCY2CmtFzQE09rcZiM3GO2og==
   dependencies:
     fast-redact "^3.0.0"
     fastify-warning "^0.2.0"
