@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@antora/asciidoc-loader@3.0.0-beta.2", "@antora/asciidoc-loader@^3.0.0-beta.2", "@antora/asciidoc-loader@~2":
+"@antora/asciidoc-loader@3.0.0-beta.2", "@antora/asciidoc-loader@3.0.0-beta.3", "@antora/asciidoc-loader@^3.0.0-beta.2", "@antora/asciidoc-loader@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/asciidoc-loader/-/asciidoc-loader-3.0.0-beta.2.tgz#58ff48af427cfbfbaba3898a62b57f7c404b14f0"
   integrity sha512-HwJO1W19t3owjbrilrNPttPv3at8/N4tDXC0xFkDiM9Bdt8OeeW/UMAWSGbw8/L5d8NLgeswFIbkBWy6XAQuRw==
@@ -21,7 +21,7 @@
     "@antora/user-require-helper" "~2.0"
     commander "~8.3"
 
-"@antora/content-aggregator@3.0.0-beta.2", "@antora/content-aggregator@^3.0.0-beta.2", "@antora/content-aggregator@~2":
+"@antora/content-aggregator@3.0.0-beta.3", "@antora/content-aggregator@^3.0.0-beta.2", "@antora/content-aggregator@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/content-aggregator/-/content-aggregator-3.0.0-beta.2.tgz#e667f5be512d145401513577f4e9e7320f549af1"
   integrity sha512-4jld62rJqjDk0fsEt1GnYH2zWq7fUMjV3nyEwWwpm6TAx6ya7teImFX3gqa2Hd+yHe9Z2Zm7+bVQUcTrqQNztQ==
@@ -42,7 +42,7 @@
     vinyl "~2.2"
     vinyl-fs "~3.0"
 
-"@antora/content-classifier@3.0.0-beta.2", "@antora/content-classifier@^3.0.0-beta.2", "@antora/content-classifier@~2":
+"@antora/content-classifier@3.0.0-beta.2", "@antora/content-classifier@3.0.0-beta.3", "@antora/content-classifier@^3.0.0-beta.2", "@antora/content-classifier@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/content-classifier/-/content-classifier-3.0.0-beta.2.tgz#7b142d30b19b500ac0dd9ff88cd6c66c20ef17e6"
   integrity sha512-0Fw0j7GHM7i45S+k4JSHO8IvhmcHXPj8lRb68J6xSwWvd6lomqDyu20wmxXqpaq6ECSV6mNkQfMGmftAkqxJPQ==
@@ -51,7 +51,7 @@
     mime-types "~2.1"
     vinyl "~2.2"
 
-"@antora/document-converter@3.0.0-beta.2", "@antora/document-converter@^3.0.0-beta.2", "@antora/document-converter@~2":
+"@antora/document-converter@3.0.0-beta.3", "@antora/document-converter@^3.0.0-beta.2", "@antora/document-converter@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/document-converter/-/document-converter-3.0.0-beta.2.tgz#4d3249bce40950b9529249e961f9e99fed85100a"
   integrity sha512-Ni8ZK3u/xpiXduLLbTeKZ71jVY2Yh4bTOCPICTRyOpOCjzxnaMdEfqBZMiy6hvIs3o8IRjoBtbsODOYZH1HFtw==
@@ -73,14 +73,24 @@
     pino-pretty "~7.2"
     sonic-boom "~2.3"
 
-"@antora/navigation-builder@3.0.0-beta.2", "@antora/navigation-builder@^3.0.0-beta.2", "@antora/navigation-builder@~2":
+"@antora/logger@3.0.0-beta.3":
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.0.0-beta.3.tgz#1b1acfaf6e9ae1f3667b64889be6e38393e9c507"
+  integrity sha512-iZGc+rTiDQ2BXsv+qUXVdffFC5HRv7nz+W9w86sU5kbXugvNmIVcHCoCPtRotnF0PwDBZQRSq6N9gu+gx1s2gA==
+  dependencies:
+    "@antora/expand-path-helper" "~2.0"
+    pino "~7.4"
+    pino-pretty "~7.2"
+    sonic-boom "~2.3"
+
+"@antora/navigation-builder@3.0.0-beta.3", "@antora/navigation-builder@^3.0.0-beta.2", "@antora/navigation-builder@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/navigation-builder/-/navigation-builder-3.0.0-beta.2.tgz#a0f274cac21db4eb0ff39d5198d2742eaa31e5a3"
   integrity sha512-nwYEEHnaw0/HktNxTpDsJYKeRNBe45FfIapzvGeebyNI4ClGFv0ZSM0dtjpzSvTGPff1M078JHqsOctxNKAGkQ==
   dependencies:
     "@antora/asciidoc-loader" "3.0.0-beta.2"
 
-"@antora/page-composer@3.0.0-beta.2", "@antora/page-composer@^3.0.0-beta.2", "@antora/page-composer@~2":
+"@antora/page-composer@3.0.0-beta.3", "@antora/page-composer@^3.0.0-beta.2", "@antora/page-composer@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/page-composer/-/page-composer-3.0.0-beta.2.tgz#d5ba48df38cb9cb24cfde1086ae451f18d58689a"
   integrity sha512-Q48YMlSeRfcPxLcFa5YQw5GNsX6G01sC9IInehwbso9eH83hWw8CJ7lDVt/x9+TJPAWWE+scAA4QK5ZIWnrMgQ==
@@ -100,7 +110,7 @@
     js-yaml "~4.1"
     json5 "~2.2"
 
-"@antora/redirect-producer@2", "@antora/redirect-producer@3.0.0-beta.2", "@antora/redirect-producer@^3.0.0-beta.2":
+"@antora/redirect-producer@2", "@antora/redirect-producer@3.0.0-beta.3", "@antora/redirect-producer@^3.0.0-beta.2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/redirect-producer/-/redirect-producer-3.0.0-beta.2.tgz#c39502486d6dc960a98f34e8cbbce85cf02e85ac"
   integrity sha512-1Xdu7u0nLs39gwYJnEmbzqgki9y32YqVAQfdpMReLKZ53c7eZEtXq0LQ0Ka92wgNOkghoW7c2ulHBbHn6ysfdQ==
@@ -108,25 +118,25 @@
     "@antora/asciidoc-loader" "3.0.0-beta.2"
     vinyl "~2.2"
 
-"@antora/site-generator-default@^3.0.0-beta.2":
-  version "3.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@antora/site-generator-default/-/site-generator-default-3.0.0-beta.2.tgz#b18a9393b029b0974c2ef3378daf43dbd1aa3e00"
-  integrity sha512-cNaAKuSYLsUdWiha7vyDod4VgX7Y6uxhFYbRNdIArhPTATLyTJy3cf4bJFQuAJKdMDZn93Redj9SRJ6mWdfr1Q==
+"@antora/site-generator-default@^3.0.0-beta.3":
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@antora/site-generator-default/-/site-generator-default-3.0.0-beta.3.tgz#a21e84ff7859ee4511c1b5e6012c74ad2bcf9978"
+  integrity sha512-EJkuZdZKiZ1U96rFhShSIGWbuTTXNJ/8IDC0bBNOH2gg97pM7iq2ahJG0jNJfd8nwBeZjRFKy0OrAunsTApkNQ==
   dependencies:
-    "@antora/asciidoc-loader" "3.0.0-beta.2"
-    "@antora/content-aggregator" "3.0.0-beta.2"
-    "@antora/content-classifier" "3.0.0-beta.2"
-    "@antora/document-converter" "3.0.0-beta.2"
-    "@antora/logger" "3.0.0-beta.2"
-    "@antora/navigation-builder" "3.0.0-beta.2"
-    "@antora/page-composer" "3.0.0-beta.2"
-    "@antora/redirect-producer" "3.0.0-beta.2"
-    "@antora/site-mapper" "3.0.0-beta.2"
-    "@antora/site-publisher" "3.0.0-beta.2"
-    "@antora/ui-loader" "3.0.0-beta.2"
+    "@antora/asciidoc-loader" "3.0.0-beta.3"
+    "@antora/content-aggregator" "3.0.0-beta.3"
+    "@antora/content-classifier" "3.0.0-beta.3"
+    "@antora/document-converter" "3.0.0-beta.3"
+    "@antora/logger" "3.0.0-beta.3"
+    "@antora/navigation-builder" "3.0.0-beta.3"
+    "@antora/page-composer" "3.0.0-beta.3"
+    "@antora/redirect-producer" "3.0.0-beta.3"
+    "@antora/site-mapper" "3.0.0-beta.3"
+    "@antora/site-publisher" "3.0.0-beta.3"
+    "@antora/ui-loader" "3.0.0-beta.3"
     "@antora/user-require-helper" "~2.0"
 
-"@antora/site-mapper@3.0.0-beta.2", "@antora/site-mapper@^3.0.0-beta.2", "@antora/site-mapper@~2":
+"@antora/site-mapper@3.0.0-beta.3", "@antora/site-mapper@^3.0.0-beta.2", "@antora/site-mapper@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/site-mapper/-/site-mapper-3.0.0-beta.2.tgz#76299c56b76fe0e12f61d4ab6ca65c46cd46cea6"
   integrity sha512-DLAulRBbx7vcUzqXeApFwtK2l5X0PUwXHF8xQ73BK/eAgeL9+RvyJXMJc2V9k+LkPmulQezrRySDKuV0S20Mug==
@@ -134,7 +144,7 @@
     "@antora/content-classifier" "3.0.0-beta.2"
     vinyl "~2.2"
 
-"@antora/site-publisher@3.0.0-beta.2", "@antora/site-publisher@^3.0.0-beta.2", "@antora/site-publisher@~2":
+"@antora/site-publisher@3.0.0-beta.3", "@antora/site-publisher@^3.0.0-beta.2", "@antora/site-publisher@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/site-publisher/-/site-publisher-3.0.0-beta.2.tgz#38b52d9ff11d68f75654769c92be918bdd0d8a88"
   integrity sha512-YfRmKnEoADWRvivuZXGTrDiDL1TWCd8fqHZApAvJjGAwkzhdJgUhtlRwgYl5E+SvvfARidoXu0ZhEDW/+pB9NQ==
@@ -145,7 +155,7 @@
     vinyl "~2.2"
     vinyl-fs "~3.0"
 
-"@antora/ui-loader@3.0.0-beta.2", "@antora/ui-loader@^3.0.0-beta.2", "@antora/ui-loader@~2":
+"@antora/ui-loader@3.0.0-beta.3", "@antora/ui-loader@^3.0.0-beta.2", "@antora/ui-loader@~2":
   version "3.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@antora/ui-loader/-/ui-loader-3.0.0-beta.2.tgz#2016ad77593c30d46acd852eea0bb9e727795dd7"
   integrity sha512-9rNH90N0KhsyL/AMCXWsw0fqvZ3kO1nptg04IccHHEHHLtcziknFQEthhd/tpcufaImvUOAPKXYdO4YUKGXwFg==
@@ -1262,6 +1272,23 @@ pino@~7.2:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/pino/-/pino-7.2.0.tgz#73cf31d71466d7f8158555eafdb1b9e226d33241"
   integrity sha512-85EiMfTy2E7S+QSHgaN7oCfnfgxv/8PxG6Yf+CRXUZbRL+Rb9qHQAEATLubjJMSl3RvfrTKNkAP3D2hNNx41Aw==
+  dependencies:
+    fast-redact "^3.0.0"
+    fastify-warning "^0.2.0"
+    get-caller-file "^2.0.5"
+    on-exit-leak-free "^0.2.0"
+    pino-abstract-transport v0.5.0
+    pino-std-serializers "^4.0.0"
+    quick-format-unescaped "^4.0.3"
+    real-require "^0.1.0"
+    safe-stable-stringify "^2.1.0"
+    sonic-boom "^2.2.1"
+    thread-stream "^0.13.0"
+
+pino@~7.4:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-7.4.1.tgz#ccac88e77563bab9b1ced05521b5eb94f17ec7e1"
+  integrity sha512-dVqLxCSsINhHJQP9wXplhYtSFwNLrFtOeVK/gWeprF+KVlibR0zePBPRPZjWzWeCY2CmtFzQE09rcZiM3GO2og==
   dependencies:
     fast-redact "^3.0.0"
     fastify-warning "^0.2.0"
