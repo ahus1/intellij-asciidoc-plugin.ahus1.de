@@ -10,8 +10,8 @@
     "serve": "http-server _site -c-1 -p 5000 -a 127.0.0.1"
   },
   "devDependencies": {
-    "@antora/cli": "^3.0.0-beta.2",
-    "@antora/site-generator-default": "^3.0.0-beta.2",
+    "@antora/cli": "^3.0.0-beta.3",
+    "@antora/site-generator-default": "^3.0.0-beta.3",
     "antora-lunr": "^0.8.0",
     "antora-site-generator-lunr": "^0.6.1",
     "asciidoctor-highlight.js": "^0.4.0",
@@ -19,16 +19,16 @@
     "http-server": "^14.0.0"
   },
   "resolutions": {
-    "@antora/asciidoc-loader": "^3.0.0-beta.2",
-    "@antora/content-aggregator": "^3.0.0-beta.2",
-    "@antora/content-classifier": "^3.0.0-beta.2",
-    "@antora/document-converter": "^3.0.0-beta.2",
-    "@antora/navigation-builder": "^3.0.0-beta.2",
-    "@antora/page-composer": "^3.0.0-beta.2",
-    "@antora/playbook-builder": "^3.0.0-beta.2",
-    "@antora/redirect-producer": "^3.0.0-beta.2",
-    "@antora/site-mapper": "^3.0.0-beta.2",
-    "@antora/site-publisher": "^3.0.0-beta.2",
-    "@antora/ui-loader": "^3.0.0-beta.2"
+    "@antora/asciidoc-loader": "^3.0.0-beta.3",
+    "@antora/content-aggregator": "^3.0.0-beta.3",
+    "@antora/content-classifier": "^3.0.0-beta.3",
+    "@antora/document-converter": "^3.0.0-beta.3",
+    "@antora/navigation-builder": "^3.0.0-beta.3",
+    "@antora/page-composer": "^3.0.0-beta.3",
+    "@antora/playbook-builder": "^3.0.0-beta.3",
+    "@antora/redirect-producer": "^3.0.0-beta.3",
+    "@antora/site-mapper": "^3.0.0-beta.3",
+    "@antora/site-publisher": "^3.0.0-beta.3",
+    "@antora/ui-loader": "^3.0.0-beta.3"
   }
 }
