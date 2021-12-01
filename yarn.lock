@@ -11,13 +11,13 @@
     "@antora/user-require-helper" "~2.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.0.0-beta.3":
-  version "3.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-beta.3.tgz#1c09690784e0ddc1a7bd3fc64ed0fe58500a85c8"
-  integrity sha512-bEQO2HIFT4e/REEaCgwS/wppr3dCq/oHnPBb7vLtoMoDEAkIyIor+RaZZ4qNrGOlCxsVQkrP+7CpEvC7/kfa/Q==
+"@antora/cli@^3.0.0-beta.4":
+  version "3.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-beta.4.tgz#6b6523d219285041aabfbf3697b3c4d08f306b17"
+  integrity sha512-Sx1Pp72fl5KeQpkaR9bg9IgPCuQrBG0W/kIguyU9xLvonNanvEdudRmDHItiWkwGg/7ZuPqcy0bQJEHoG1WSJA==
   dependencies:
-    "@antora/logger" "3.0.0-beta.3"
-    "@antora/playbook-builder" "3.0.0-beta.3"
+    "@antora/logger" "3.0.0-beta.4"
+    "@antora/playbook-builder" "3.0.0-beta.4"
     "@antora/user-require-helper" "~2.0"
     commander "~8.3"
 
@@ -72,6 +72,16 @@
     pino-pretty "~7.2"
     sonic-boom "~2.3"
 
+"@antora/logger@3.0.0-beta.4":
+  version "3.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.0.0-beta.4.tgz#4a1402c5077584807bbe9dee08ff1fff7205cf48"
+  integrity sha512-aI8KCv4LaodT6bYQAZxJKMocdpxy6bptkfk0enf7k+KCGIE34YYu46CkvVGM1Q1Vwk88abUYwkKmBmI9/xmB2w==
+  dependencies:
+    "@antora/expand-path-helper" "~2.0"
+    pino "~7.4"
+    pino-pretty "~7.2"
+    sonic-boom "~2.3"
+
 "@antora/navigation-builder@3.0.0-beta.3", "@antora/navigation-builder@^3.0.0-beta.3", "@antora/navigation-builder@~2":
   version "3.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@antora/navigation-builder/-/navigation-builder-3.0.0-beta.3.tgz#938e1bf5e09ca13443c785a275a28ca8b967e652"
@@ -88,7 +98,7 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/playbook-builder@3.0.0-beta.3", "@antora/playbook-builder@^3.0.0-beta.3", "@antora/playbook-builder@~2":
+"@antora/playbook-builder@3.0.0-beta.4", "@antora/playbook-builder@^3.0.0-beta.3", "@antora/playbook-builder@~2":
   version "3.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-beta.3.tgz#0201d4749e877c76c24fc09dcf829181447a5848"
   integrity sha512-fNcpLpv0v/Abz6/kf3LQaEgGBoqcjFd+8HFKHBwsJSNCbIiG3yKEGSQjb6CG0A6b3mRfmNAR1RH1X9/dXpV0rg==
