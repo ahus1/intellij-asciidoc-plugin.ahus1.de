@@ -11,13 +11,13 @@
     "@antora/user-require-helper" "~2.0"
     "@asciidoctor/core" "~2.2"
 
-"@antora/cli@^3.0.0-rc.1":
-  version "3.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-rc.1.tgz#e47b399bcdebc0f02e1ac80b5b30baa099765a21"
-  integrity sha512-Khba7qaur7ZTtTA9avAxXpsNuytIS7CBhG0EmkAZrHRd/qY/is2aCfIlgm9BaJT1+eBoUHzVpN+6b0k5pePc7Q==
+"@antora/cli@^3.0.0-rc.2":
+  version "3.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@antora/cli/-/cli-3.0.0-rc.2.tgz#a83d7f153b944d05448b1adaa16c4011b75dd40c"
+  integrity sha512-MCc5opEg9gDxGAfCHf0obzWzLko7azl64NQsJKtGzr6rjLU0QHPsiCZUh9gtbaD7nMaZ+Giv9H9rmr3NTFx8uw==
   dependencies:
-    "@antora/logger" "3.0.0-rc.1"
-    "@antora/playbook-builder" "3.0.0-rc.1"
+    "@antora/logger" "3.0.0-rc.2"
+    "@antora/playbook-builder" "3.0.0-rc.2"
     "@antora/user-require-helper" "~2.0"
     commander "~8.3"
 
@@ -84,6 +84,16 @@
     pino-pretty "~7.2"
     sonic-boom "~2.4"
 
+"@antora/logger@3.0.0-rc.2":
+  version "3.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@antora/logger/-/logger-3.0.0-rc.2.tgz#b3a953ca21f242baf9b4f1c10fd6fe01ca6d8d8e"
+  integrity sha512-LiYtFKcEpPGdeRqgplCqyMvLrqsGhR1d2l0XBUiBglfx/FCCzVcfHFeoBDd5lpwWzn0OUoZ9wUoK1JEF7lj1/g==
+  dependencies:
+    "@antora/expand-path-helper" "~2.0"
+    pino "~7.5"
+    pino-pretty "~7.2"
+    sonic-boom "~2.4"
+
 "@antora/navigation-builder@3.0.0-rc.1", "@antora/navigation-builder@^3.0.0-rc.1", "@antora/navigation-builder@~2":
   version "3.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@antora/navigation-builder/-/navigation-builder-3.0.0-rc.1.tgz#33557525363d3231b3c2e6fe45f2bcc1d1a10697"
@@ -100,7 +110,7 @@
     handlebars "~4.7"
     require-from-string "~2.0"
 
-"@antora/playbook-builder@3.0.0-rc.1", "@antora/playbook-builder@^3.0.0-rc.1", "@antora/playbook-builder@~2":
+"@antora/playbook-builder@3.0.0-rc.2", "@antora/playbook-builder@^3.0.0-rc.1", "@antora/playbook-builder@~2":
   version "3.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@antora/playbook-builder/-/playbook-builder-3.0.0-rc.1.tgz#c3adcf5d4510df5463f3803b218c25f402c25215"
   integrity sha512-kgjjoW86Ee5QpxK/NgEDKBnWuvnPn2/4xjsakwnGbs8ubiRauUgJ/wd6D1aoZueCTjz1eAApu0HZ19SX56x+Xg==
