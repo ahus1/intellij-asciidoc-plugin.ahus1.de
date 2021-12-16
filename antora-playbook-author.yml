@@ -22,6 +22,8 @@ ui:
 runtime:
   fetch: true
   cache_dir: ./.cache/antora
+  log:
+    failure_level: error
 
 output:
   clean: true
