@@ -12,6 +12,10 @@ content:
       branches:
         - 'HEAD'
 
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+
 ui:
   bundle:
     url: _antora/ui-bundle.zip

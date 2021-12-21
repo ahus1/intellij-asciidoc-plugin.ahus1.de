@@ -9,7 +9,6 @@ jekyll build --source startpage --destination _site
 # yarn install
 
 # prepare antora: enable document search; override URL environment variable as Antora "looks" at it
-export DOCSEARCH_ENABLED=true && export DOCSEARCH_ENGINE=lunr && \
 export URL=${URL}/docs && \
 yarn build
 

@@ -1,9 +1,16 @@
-/* eslint-env browser */
-window.antoraLunr = (function (lunr) {
+;(globalThis || window).lunrSiteSearch = (function () {
+  /* eslint-disable no-var */
+  const config = document.getElementById('search-script').dataset
+  const siteRootPath = config.siteRootPath || ''
+  appendStylesheet(config.stylesheet)
   var searchInput = document.getElementById('search-input')
   var searchResult = document.createElement('div')
   searchResult.classList.add('search-result-dropdown-menu')
   searchInput.parentNode.appendChild(searchResult)
+
+  function appendStylesheet (href) {
+    document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: href }))
+  }
 
   function highlightText (doc, position) {
     var hits = []
@@ -17,7 +24,7 @@ window.antoraLunr = (function (lunr) {
 
     var end = start + length
     var textEnd = text.length - 1
-    var contextOffset = 15
+    var contextOffset = 100
     var contextAfter = end + contextOffset > textEnd ? textEnd : end + contextOffset
     var contextBefore = start - contextOffset < 0 ? 0 : start - contextOffset
     if (start === 0 && end === textEnd) {
@@ -90,7 +97,7 @@ window.antoraLunr = (function (lunr) {
     return hits
   }
 
-  function createSearchResult(result, store, searchResultDataset) {
+  function createSearchResult (result, store, searchResultDataset) {
     result.forEach(function (item) {
       var url = item.ref
       var hash
@@ -112,8 +119,7 @@ window.antoraLunr = (function (lunr) {
     var documentHit = document.createElement('div')
     documentHit.classList.add('search-result-document-hit')
     var documentHitLink = document.createElement('a')
-    var rootPath = window.antora.basePath
-    documentHitLink.href = rootPath + item.ref
+    documentHitLink.href = siteRootPath + item.ref
     documentHit.appendChild(documentHitLink)
     hits.forEach(function (hit) {
       documentHitLink.appendChild(hit)
@@ -207,22 +213,31 @@ window.antoraLunr = (function (lunr) {
     }
   }
 
-  function init (data) {
-    var index = Object.assign({index: lunr.Index.load(data.index), store: data.store})
+  function init (lunr, data) {
+    var index = Object.assign({ index: lunr.Index.load(data.index), store: data.store })
+    var debug = 'URLSearchParams' in window && new URLSearchParams(window.location.search).has('lunr-debug')
     var search = debounce(function () {
-      searchIndex(index.index, index.store, searchInput.value)
+      try {
+        searchIndex(index.index, index.store, searchInput.value)
+      } catch (err) {
+        if (debug) console.debug('Invalid search query: ' + searchInput.value + ' (' + err.message + ')')
+      }
     }, 100)
     searchInput.addEventListener('keydown', search)
 
+    searchInput.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') searchInput.value = ''
+    })
+
     // this is prevented in case of mousedown attached to SearchResultItem
     searchInput.addEventListener('blur', function (e) {
+      /*
       while (searchResult.firstChild) {
         searchResult.removeChild(searchResult.firstChild)
       }
+       */
     })
   }
 
-  return {
-    init: init,
-  }
-})(window.lunr)
+  return { init: init }
+})()
