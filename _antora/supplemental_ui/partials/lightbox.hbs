@@ -9,10 +9,14 @@
 <script>
     function openModal() {
         document.getElementById("myModal").style.display = "block";
+        // use overflowY = hidden to prevent the body from scrolling when modal is visible
+        // doesn't work with overscroll-behavior, as this would work only when the modal has a scrollbar
+        document.getElementsByTagName("body")[0].style.overflowY = "hidden";
     }
 
     function closeModal() {
         document.getElementById("myModal").style.display = "none";
+        document.getElementsByTagName("body")[0].style.overflowY = "auto";
     }
 
     document.querySelectorAll('.imageblock img').forEach(element => {
