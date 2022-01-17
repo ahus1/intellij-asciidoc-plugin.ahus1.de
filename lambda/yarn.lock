@@ -2210,10 +2210,10 @@ domain-browser@^1.1.1:
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
   integrity sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
 
-dotenv@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-11.0.0.tgz#ee37feddf8ada6d348a79e198312d4a8abfd1c1e"
-  integrity sha512-Fp/b504Y5W+e+FpCxTFMUZ7ZEQkQYF0rx+KZtmwixJxGQbLHrhCwo3FjZgNC8vIfrSi29PABNbMoCGD9YoiXbQ==
+dotenv@^14.1.0:
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-14.1.0.tgz#66e9c0c448501b006f4dd9f08080c9011c7a5e6c"
+  integrity sha512-h8V+Yfa8m0YSjf3Rgbno51cxWldb4PEixIJVL55VmW7uAfeLQKiaPrEUiBps+ARK9MeqjJgTf269OMmu6lOODQ==
 
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.7.1"
