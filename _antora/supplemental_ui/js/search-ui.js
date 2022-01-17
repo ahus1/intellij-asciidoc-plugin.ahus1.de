@@ -1,7 +1,8 @@
-;(globalThis || window).lunrSiteSearch = (function () {
+;(function (globalScope) {
   /* eslint-disable no-var */
-  const config = document.getElementById('search-script').dataset
-  const siteRootPath = config.siteRootPath || ''
+  var config = document.getElementById('search-ui-script').dataset
+  var snippetLength = parseInt(config.snippetLength || 100, 10)
+  var siteRootPath = config.siteRootPath || ''
   appendStylesheet(config.stylesheet)
   var searchInput = document.getElementById('search-input')
   var searchResult = document.createElement('div')
@@ -9,6 +10,7 @@
   searchInput.parentNode.appendChild(searchResult)
 
   function appendStylesheet (href) {
+    if (!href) return
     document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: href }))
   }
 
@@ -24,9 +26,8 @@
 
     var end = start + length
     var textEnd = text.length - 1
-    var contextOffset = 100
-    var contextAfter = end + contextOffset > textEnd ? textEnd : end + contextOffset
-    var contextBefore = start - contextOffset < 0 ? 0 : start - contextOffset
+    var contextAfter = end + snippetLength > textEnd ? textEnd : end + snippetLength
+    var contextBefore = start - snippetLength < 0 ? 0 : start - snippetLength
     if (start === 0 && end === textEnd) {
       hits.push(highlightSpan)
     } else if (start === 0) {
@@ -146,6 +147,11 @@
     return searchResultItem
   }
 
+  function clearSearchResults (reset) {
+    if (reset === true) searchInput.value = ''
+    searchResult.innerHTML = ''
+  }
+
   function filter (result, store, component) {
     return result.filter(item => {
       var url = item.ref
@@ -179,10 +185,7 @@
   }
 
   function searchIndex (index, store, text) {
-    // reset search result
-    while (searchResult.firstChild) {
-      searchResult.removeChild(searchResult.firstChild)
-    }
+    clearSearchResults(false)
     if (text.trim() === '') {
       return
     }
@@ -195,6 +198,10 @@
     } else {
       searchResultDataset.appendChild(createNoResult(text))
     }
+  }
+
+  function confineEvent (e) {
+    e.stopPropagation()
   }
 
   function debounce (func, wait, immediate) {
@@ -213,31 +220,26 @@
     }
   }
 
-  function init (lunr, data) {
+  function initSearch (lunr, data) {
     var index = Object.assign({ index: lunr.Index.load(data.index), store: data.store })
-    var debug = 'URLSearchParams' in window && new URLSearchParams(window.location.search).has('lunr-debug')
-    var search = debounce(function () {
+    var debug = 'URLSearchParams' in globalScope && new URLSearchParams(globalScope.location.search).has('lunr-debug')
+    searchInput.addEventListener(
+      'keydown',
+      debounce(function (e) {
+        if (e.key === 'Escape' || e.key === 'Esc') return clearSearchResults(true)
       try {
+          var query = searchInput.value
+          if (!query) return clearSearchResults()
         searchIndex(index.index, index.store, searchInput.value)
       } catch (err) {
-        if (debug) console.debug('Invalid search query: ' + searchInput.value + ' (' + err.message + ')')
+          if (debug) console.debug('Invalid search query: ' + query + ' (' + err.message + ')')
       }
     }, 100)
-    searchInput.addEventListener('keydown', search)
-
-    searchInput.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') searchInput.value = ''
-    })
-
-    // this is prevented in case of mousedown attached to SearchResultItem
-    searchInput.addEventListener('blur', function (e) {
-      /*
-      while (searchResult.firstChild) {
-        searchResult.removeChild(searchResult.firstChild)
-      }
-       */
-    })
+    )
+    searchInput.addEventListener('click', confineEvent)
+    searchResult.addEventListener('click', confineEvent)
+    document.documentElement.addEventListener('click', clearSearchResults)
   }
 
-  return { init: init }
-})()
+  globalScope.initSearch = initSearch
+})(typeof globalThis !== 'undefined' ? globalThis : window)
