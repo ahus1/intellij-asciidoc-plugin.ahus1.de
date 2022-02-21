@@ -1,3 +1,4 @@
+/* global CustomEvent */
 ;(function (globalScope) {
   /* eslint-disable no-var */
   var config = document.getElementById('search-ui-script').dataset
@@ -100,13 +101,13 @@
 
   function createSearchResult (result, store, searchResultDataset) {
     result.forEach(function (item) {
-      var url = item.ref
+      var doc = store[item.ref]
+      var url = doc.url
       var hash
       if (url.includes('#')) {
         hash = url.substring(url.indexOf('#') + 1)
         url = url.replace('#' + hash, '')
       }
-      var doc = store[url]
       var metadata = item.matchData.metadata
       var hits = highlightHit(metadata, hash, doc)
       searchResultDataset.appendChild(createSearchResultItem(doc, item, hits))
@@ -120,7 +121,7 @@
     var documentHit = document.createElement('div')
     documentHit.classList.add('search-result-document-hit')
     var documentHitLink = document.createElement('a')
-    documentHitLink.href = siteRootPath + item.ref
+    documentHitLink.href = siteRootPath + doc.url
     documentHit.appendChild(documentHitLink)
     hits.forEach(function (hit) {
       documentHitLink.appendChild(hit)
@@ -154,13 +155,10 @@
 
   function filter (result, store, component) {
     return result.filter(item => {
-      var url = item.ref
-      var hash
-      if (url.includes('#')) {
-        hash = url.substring(url.indexOf('#') + 1)
-        url = url.replace('#' + hash, '')
+      if (item.ref === 'undefined') {
+        return false;
       }
-      var doc = store[url]
+      var doc = store[item.ref]
       return doc.component === component
     })
   }
@@ -220,26 +218,44 @@
     }
   }
 
+  function enableSearchInput (enabled) {
+    searchInput.disabled = !enabled
+    searchInput.title = enabled ? '' : 'Loading index...'
+  }
+
   function initSearch (lunr, data) {
+    var start = performance.now()
     var index = Object.assign({ index: lunr.Index.load(data.index), store: data.store })
+    enableSearchInput(true)
+    searchInput.dispatchEvent(
+        new CustomEvent('loadedindex', {
+          detail: {
+            took: performance.now() - start,
+          },
+        })
+    )
     var debug = 'URLSearchParams' in globalScope && new URLSearchParams(globalScope.location.search).has('lunr-debug')
     searchInput.addEventListener(
-      'keydown',
-      debounce(function (e) {
-        if (e.key === 'Escape' || e.key === 'Esc') return clearSearchResults(true)
-      try {
-          var query = searchInput.value
-          if (!query) return clearSearchResults()
-        searchIndex(index.index, index.store, searchInput.value)
-      } catch (err) {
-          if (debug) console.debug('Invalid search query: ' + query + ' (' + err.message + ')')
-      }
-    }, 100)
+        'keydown',
+        debounce(function (e) {
+          if (e.key === 'Escape' || e.key === 'Esc') return clearSearchResults(true)
+          try {
+            var query = searchInput.value
+            if (!query) return clearSearchResults()
+            searchIndex(index.index, index.store, searchInput.value)
+          } catch (err) {
+            // if (debug)
+              console.log('Invalid search query: ' + query + ' (' + err.message + ')')
+          }
+        }, 100)
     )
     searchInput.addEventListener('click', confineEvent)
     searchResult.addEventListener('click', confineEvent)
     document.documentElement.addEventListener('click', clearSearchResults)
   }
+
+  // disable the search input until the index is loaded
+  enableSearchInput(false)
 
   globalScope.initSearch = initSearch
 })(typeof globalThis !== 'undefined' ? globalThis : window)
