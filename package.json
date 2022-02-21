@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@antora/cli": "^3.0.0",
-    "@antora/lunr-extension": "^1.0.0-alpha.4",
+    "@antora/lunr-extension": "^1.0.0-alpha.5",
     "@antora/site-generator": "^3.0.0",
     "asciidoctor-highlight.js": "^0.4.0",
     "asciidoctor-kroki": "^0.15.4",
