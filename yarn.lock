@@ -84,10 +84,10 @@
     pino-pretty "~7.3"
     sonic-boom "~2.4"
 
-"@antora/lunr-extension@^1.0.0-alpha.6":
-  version "1.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@antora/lunr-extension/-/lunr-extension-1.0.0-alpha.6.tgz#a465fb2850eb67cb1cffbcd429a74d5b9da52a2e"
-  integrity sha512-H+zpn2xVTBk8mBrMjCMZGQ0aZd2E/1yLt1UJ2DuZMRJOaGV7c43xQVp0gkQSS039YH8nqphqhqSwtFVal41u9A==
+"@antora/lunr-extension@^1.0.0-alpha.8":
+  version "1.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@antora/lunr-extension/-/lunr-extension-1.0.0-alpha.8.tgz#7a72afd3e890caebd6cfcb6933370a558a1d8b9f"
+  integrity sha512-vdBgW3rsvbnmA236kT2Dckh9n0Db5za2/WxiLnFLgZ05ZO1KJQa9+R2WHaIFuGE7bKKbY+lqfM/i3KiezbL9YQ==
   dependencies:
     cheerio "1.0.0-rc.10"
     html-entities "~2.3"
