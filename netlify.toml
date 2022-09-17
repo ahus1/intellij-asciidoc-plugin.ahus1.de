@@ -18,6 +18,7 @@
 [[headers]]
   for = "/docs/antora/fonts/*"
   [headers.values]
+    Access-Control-Allow-Origin = "*"
     cache-control = '''
 	public,
 	max-age=3600'''
