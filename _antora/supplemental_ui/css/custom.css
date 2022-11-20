@@ -99,3 +99,27 @@ footer.footer {
     font-weight: normal;
     text-shadow: 1px 0 0 black;
 }
+
+.macos::after {
+    content: ' (macOS)';
+}
+
+.windows::after {
+    content: ' (Windows)';
+}
+
+.linux::after {
+    content: ' (Linux)';
+}
+
+.windows.linux::after {
+    content: ' (Windows, Linux)';
+}
+
+.windows.mac::after {
+    content: ' (Windows, MacOS)';
+}
+
+.linux.mac::after {
+    content: ' (Linux, MacOS)';
+}
