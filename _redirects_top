@@ -4,5 +4,6 @@ https://intellij-asciidoc-plugin.netlify.app/* https://intellij-asciidoc-plugin.
 # this is how antora links the docs, let's do the same
 /docs/users-guide/ /docs/users-guide/index.html 301!
 /docs/contributors-guide/ /docs/contributors-guide/index.html 301!
-
+/users-guide/* /docs/users-guide/:splat 301!
+/contributors-guide/* /docs/contributors-guide/:splat 301!
 
