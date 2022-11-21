@@ -44,13 +44,13 @@ if (elements.length > 0 && osdependent.length > 0) {
             .linux.mac::after {  content: ''; }
             `
             if (macos === true) {
-                content += ".macos { display: inherit }"
+                content += ".macos { display: initial }"
             }
             if (windows === true) {
-                content += `.windows { display: inherit }`
+                content += `.windows { display: initial }`
             }
             if (linux === true) {
-                content += `.linux { display: inherit }`
+                content += `.linux { display: initial }`
             }
         } else {
             content = ``

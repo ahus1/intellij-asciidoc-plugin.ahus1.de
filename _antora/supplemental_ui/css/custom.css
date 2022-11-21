@@ -123,3 +123,7 @@ footer.footer {
 .linux.mac::after {
     content: ' (Linux, MacOS)';
 }
+
+.keyseq {
+    white-space: nowrap;
+}
