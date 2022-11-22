@@ -127,3 +127,9 @@ footer.footer {
 .keyseq {
     white-space: nowrap;
 }
+
+a[href^="https://"]:after, a[href^="http://"]:after {
+    content: '\00A0\2197'; /* arrow upper right, alternative \29C9 (two window) */
+    vertical-align: text-top;
+    font-size: 75%;
+}
