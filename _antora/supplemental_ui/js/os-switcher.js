@@ -35,7 +35,7 @@ if (elements.length > 0 && osdependent.length > 0) {
                 linux = true
             }
             content = `
-            .macos,.window,.linux { display: none }
+            .macos,.windows,.linux { display: none }
             .macos::after {  content: ''; }
             .windows::after {  content: ''; } 
             .linux::after {  content: ''; }
