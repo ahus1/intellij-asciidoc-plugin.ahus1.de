@@ -60,6 +60,17 @@ footer.footer {
     border-style: solid;
 }
 
+.shadow img {
+    border-width: 1px;
+    border-color: darkgrey;
+    box-shadow: 5px 5px 5px darkgrey;
+    border-style: solid;
+}
+
+.image.right {
+    padding-left: 0.5em;
+}
+
 .navbar-brand .navbar-item {
     max-width: 60vw;
 }
@@ -128,7 +139,7 @@ footer.footer {
     white-space: nowrap;
 }
 
-a[href^="https://"]:after, a[href^="http://"]:after {
+a[href^="https://"]:not(.image):after, a[href^="http://"]:not(.image):after {
     content: '\00A0\2197'; /* arrow upper right, alternative \29C9 (two window) */
     vertical-align: text-top;
     font-size: 75%;

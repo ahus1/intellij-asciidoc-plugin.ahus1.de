@@ -20,12 +20,14 @@
     }
 
     document.querySelectorAll('.imageblock img').forEach(element => {
-        element.className += " lightbox";
-        element.addEventListener('click', evt => {
-            document.getElementById("imageinmodal").setAttribute("src", evt.currentTarget.getAttribute("src"))
-            document.getElementById("imageinmodal").setAttribute("alt", evt.currentTarget.getAttribute("alt"))
-            openModal();
-        })
+        if (element.closest('a') === null) {
+            element.className += " lightbox";
+            element.addEventListener('click', evt => {
+                document.getElementById("imageinmodal").setAttribute("src", evt.currentTarget.getAttribute("src"))
+                document.getElementById("imageinmodal").setAttribute("alt", evt.currentTarget.getAttribute("alt"))
+                openModal();
+            })
+        }
     });
 </script>
 <style>
