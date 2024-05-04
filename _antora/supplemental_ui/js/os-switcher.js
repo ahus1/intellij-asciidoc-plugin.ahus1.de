@@ -40,8 +40,8 @@ if (elements.length > 0 && osdependent.length > 0) {
             .windows::after {  content: ''; } 
             .linux::after {  content: ''; }
             .windows.linux::after {  content: ''; } 
-            .windows.mac::after {  content: ''; } 
-            .linux.mac::after {  content: ''; }
+            .windows.macos::after {  content: ''; } 
+            .linux.macos::after {  content: ''; }
             `
             if (macos === true) {
                 content += ".macos { display: initial }"

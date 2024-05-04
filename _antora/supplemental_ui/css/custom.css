@@ -127,11 +127,11 @@ footer.footer {
     content: ' (Windows, Linux)';
 }
 
-.windows.mac::after {
+.windows.macos::after {
     content: ' (Windows, MacOS)';
 }
 
-.linux.mac::after {
+.linux.macos::after {
     content: ' (Linux, MacOS)';
 }
 
