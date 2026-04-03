@@ -3,7 +3,7 @@ set -e
 set -x
 
 # prepare start page with jekyll
-jekyll build --source startpage --destination _site
+bundler exec jekyll build --source startpage --destination _site
 
 # install already performed by Netlify before this script runs
 # yarn install
